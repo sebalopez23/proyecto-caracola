@@ -65,7 +65,7 @@ body{
 }
 
 ::-webkit-scrollbar{
-  width: 4px;
+  width: 0px;
   height: 8px;
 }
 
@@ -293,9 +293,6 @@ label.error{
 
 
 /* 1.4 Buttons */
-
-
-
 .btn{
   font-family: 'Karla', sans-serif;
   position: relative;
@@ -304,7 +301,8 @@ label.error{
   border-radius: 0;
   padding:1em 2.4em 1em;
   font-size: 0.875em;
-  color:#000;
+  color: #fff;
+  border-radius: 30px;
   white-space: nowrap;
   text-align: center;
   letter-spacing: 0.15em;
