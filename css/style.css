@@ -50,14 +50,24 @@
 @import url('magnific-popup.css');
 @import url('owl.carousel.min.css');
 
-
+/* Prompt */
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/prompt-v10-latin-regular.ttf);
+  /* IE9 Compat Modes */
+  src: local(''),
+      url(../fonts/prompt-v10-latin-regular.woff) format('embedded-opentype'),
+      /* IE6-IE8 */
+}
 
 html{
   -webkit-font-smoothing: antialiased;
 }
 
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-size: 1rem;
   line-height: 1.625em;
   color:#767676;
@@ -98,7 +108,7 @@ body{
 h1,
 .h1{ 
   position: relative;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-size: 5.725rem;
   font-weight: 700;
   line-height: 1;
@@ -108,18 +118,19 @@ h1,
 h2,
 .h2{ 
   position: relative;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-weight: 700;
   font-size: 2.7rem;
   line-height: 1.2;
   color: #000;
   margin:2rem 0;
+  letter-spacing: 5px;
 }
 
 
 h3,
 .h3{ 
-  font-family: 'Karla', sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-weight: 700;
   font-size: 1.925rem;
   line-height: 1.25;
@@ -129,7 +140,7 @@ h3,
 
 h4,
 .h4{ 
-  font-family: 'Karla', sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-weight: 600;
   font-size: 1.525rem;
   line-height: 1.2;
@@ -139,7 +150,7 @@ h4,
 
 h5,
 .h5{ 
-  font-family: 'Karla', sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.2;
@@ -149,7 +160,7 @@ h5,
 
 h6,
 .h6{ 
-  font-family: 'Karla', sans-serif;
+  font-family: 'Prompt', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -216,6 +227,10 @@ a:focus{
   text-decoration: none;
 }
 
+audio {
+  height: 1.8rem;
+  width: 20rem;
+}
 .lead{
   line-height: 1.9;
   font-size: 1.125rem;
@@ -535,6 +550,7 @@ ion-icon{
   padding: 0 1.5rem;
   border-bottom: 1px solid rgba(52,52,52,0.1);
   height:4.7rem;
+  background-color: #4B5ECD;
 }
 
 
@@ -1182,10 +1198,23 @@ h1 + .line{
   position: absolute;
   right: 0;
   top: 0;
-  margin-top: -8.6rem;
+  margin-top: -7.6rem;
   font-size: 6rem;
+  color: #F27961;
 }
 
+@media (max-width: 800px) {
+  .owl-nav{
+    margin-top: 2rem;
+    margin-right: 16rem;
+  }
+  audio {
+    width: 100%;
+  }
+  h2, .h2{
+font-size: 2rem;
+  }
+}
 .owl-prev{
   margin-right: 0.6rem;
 }
@@ -1346,6 +1375,11 @@ h1 + .line{
 .row-project-box{
   margin-top: -30px;
 }
+.container-column{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 
 .col-project-box{
   margin-top: 30px;
@@ -1455,8 +1489,6 @@ h1 + .line{
   display: none;
 }
 
-
-/* Audio Player home */
 
 .audio-player {
   position: relative;
@@ -1568,7 +1600,7 @@ h1 + .line{
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 2.5rem;
+  bottom: 2rem;
   right: 2.5rem;
   background-color: #F27961;
   color: #FFF;

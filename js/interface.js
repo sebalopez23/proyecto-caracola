@@ -6,7 +6,6 @@
 	$(window).on('load',function(){
 		$('.loader').fadeOut(200);
         $('.line').addClass('active');
-        console.log("Hola")
 	});
 
 
