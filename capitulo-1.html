@@ -12,6 +12,72 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Proyecto caracola</title>
+    <style>
+
+	    .audio-player__control {
+	      position: absolute;
+	      top: 0;
+	      right: 0;
+	      bottom: 0;
+	      left: 0;
+	      width: 100%;
+	      z-index: 20;
+	      border: none;
+	      background: none;
+	      cursor: pointer;
+	    }
+	    .audio-player__control:focus {
+	      outline: none;
+	    }
+	    .audio-player__control-icon {
+	      position: absolute;
+	      width: 25px;
+	      height: 25px;
+	      top: 3.5rem;
+	      right: 24.5rem;
+	      bottom: 0;
+	      left: 0;
+	      margin: auto;
+	      overflow: hidden;
+	      transition: all 250ms ease-out;
+	      transform: scale(1);
+	      will-change: transform;
+	    }
+	    .audio-player__control-icon::after,
+	    .audio-player__control-icon::before {
+	      transition: all 200ms;
+	      will-change: transform;
+	      content: '';
+	      position: absolute;
+	      top: 0;
+	      right: 0;
+	      left: 0;
+	      bottom: 0;
+	      margin: auto;
+	    }
+	    .audio-player__control-icon::after {
+		    left: 5px;
+		    width: 0;
+		    height: 0;
+		    border-top: 6px solid transparent;
+		    border-bottom: 6px solid transparent;
+		    border-left: 12px solid ;
+		    transform: translateY(0);
+	    }
+	    .audio-player__control-icon::before {
+		    width: 10px;
+		    height: 11px;
+		    border-right: 3px solid;
+		    border-left: 3px solid;
+		    transform: translateY(-50px);
+	    }
+	    .audio-players {
+	      list-style: none;
+	      margin: 0;
+	      padding: 0;
+	      text-align: center;
+	    }
+    </style>
   </head>
 <body>
    
@@ -137,9 +203,14 @@
 	            	<div class="col-md-5">
 	                <p class="parrafos-proyecto nombre-personaje regular-bold">"Un refugio marino es una área de no extracción ubicada dentro de las áreas de manejo"</p>
 	                <div class="text-left">
-		                <audio preload="auto" controls>
-	                  	<source src="img/capitulo-1/audios/02_PROBLEMAS_pescadores.mp3"/>
-	                	</audio>
+										<div class="audio-player js-audio-player">
+											<audio preload="auto" controls>
+	                  		<source src="img/capitulo-1/audios/01_Intro.mp3"/>
+	                		</audio>
+	                  	<button class="audio-player__control js-control">
+	                    	<div class="audio-player__control-icon"></div>
+	                  	</button>
+										</div>
 	                </div>
 	            	</div>
 	            </div>
@@ -168,9 +239,14 @@
 		              	<div class="col-md-5">
                       <p class="parrafos-proyecto nombre-personaje regular-bold mt-2">"Un refugio marino es una área de no extracción ubicada dentro de las áreas de manejo"</p>
                       <div class="text-left">
-                      	<audio preload="auto" controls>
-                        	<source src="img/capitulo-1/audios/02_PROBLEMAS_pescadores.mp3"/>
-                  			</audio>
+												<div class="audio-player js-audio-player">
+	                      	<audio preload="auto" controls>
+                        		<source src="img/capitulo-1/audios/02_PROBLEMAS_pescadores.mp3"/>
+                  				</audio>
+			                  	<button class="audio-player__control js-control">
+                    				<div class="audio-player__control-icon"></div>
+	                  			</button>
+												</div>
                       </div>
 		              	</div>
 		              </div>
@@ -366,10 +442,6 @@
         </div>
       </section>
 
-
-
-
-
       <section id="partners" class="navbar-is-white text-white section pp-scrollable position-absolute">
         <div class="intro">
           <div class="scroll-wrap">
@@ -428,7 +500,7 @@
   <script src="js/jquery.pagepiling.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/interface.js"></script>
-	<script>
+	<!--<script>
 	  $( document ).ready(function() {
 	  	setInterval(function () {
 	  		console.log(window.location.href.includes("#news"))
@@ -437,6 +509,57 @@
 		  	}
 	  	}, 3000);
 		});
-  </script>
+  </script>-->
+  <script>
+    var $player = $('.js-audio-player')
+      , $playbackClass = 'is-playing'
+      , $fadeDuration = 500
+
+    $player.each(function(index) {
+      var $this = $(this)
+        , id = 'audio-player-' + index
+
+      $this.attr('id', id)
+
+      $this.find('.js-control')[0].addEventListener('click', function() {
+        resetPlayback(id)
+        playback($this, $this.find('audio'), $this.find('audio'))
+      })
+      
+      // Reset state once audio has finished playing
+      $this.find('audio')[0].addEventListener('ended', function() {
+        resetPlayback()
+      })
+    })
+
+    function playback($player, $audio, $video) {
+      if ($audio[0].paused) {
+        $audio[0].play()
+        $video[0].play()
+        $audio.animate({ volume: 1 }, $fadeDuration)
+        $player.addClass($playbackClass)
+      } else {
+        $audio.animate({ volume: 0 }, $fadeDuration, function() {
+          $audio[0].pause()
+          $video[0].pause()
+        })
+        $player.removeClass($playbackClass)
+      }
+    }
+
+    function resetPlayback(id) {
+      $player.each(function() {
+        var $this = $(this)
+
+        if ($this.attr('id') !== id) {
+          $this.find('audio').animate({ volume: 0 }, $fadeDuration, function() {
+            $(this)[0].pause()
+            $this.find('audio')[0].pause()
+          })
+          $this.removeClass($playbackClass)
+        }
+      })
+    }
+	</script>
 </body>
 </html>
