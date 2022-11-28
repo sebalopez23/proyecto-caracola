@@ -91,12 +91,31 @@
          <li class="active"><a href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
          <li><a href="#">SECOS</a></li>
       </ul>
-
+      
       <ul class="navbar-nav navbar-nav-mobile">
-        <li><a class="nav-link">ZONA 1: COQUIMBO</a></li>
-        <li><a class="nav-link">ZONA 2: VALPARAÍSO</a></li>
-        <li><a class="nav-link">ZONA 3: BÍO BÍO</a></li>
-        <li><a class="nav-link">ZONA 4: LOS LAGOS</a></li>
+        <li><a class="nav-link">REGIÓN: COQUIMBO</a></li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            REGIÓN: VALPARAÍSO
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-white" href="capitulo-1.html">REFUGIOS MARINOS ZAPALLAR</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item text-white" href="#capitulo-1.html">ALGARROBO</a>
+            </div>
+          </li>
+        <li><a class="nav-link">REGIÓN: BÍO BÍO</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            REGIÓN: LOS LAGOS
+            </a>
+            <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+                HUALAIHHUÉ
+              <a class="dropdown-item text-white" href="capitulo-1.html">BOYA OCEANOGRÁFICA CALETA EL MANZANO</a>
+              <a class="dropdown-item text-white" href="#capitulo-2.html">ACIDIFICACIÓN HORNOPIRÉN</a>
+            </div>
+          </li>
       </ul>
       <div class="navbar-mobile-footer">
         <p>© Denzel. 2020. All Rights Reserved.</p>
@@ -137,12 +156,12 @@
               <div class="row justify-content-center">
                 <div class="col-lg-8 text-center mt-5 text-white">
                     <h2 class="text-white mb-0">RELATOS DE VIDA Y DE CIENCIA</h2>
-                    <p class="text-white-p mt-5 intro-home ">“¿Puedes escuchar el mar cuando acercas a tu oído una caracola marina? Te tenemos una invitación... a conocer el sonido de la costa, las voces de sus habitantes, sus preocupaciones y sus formas de cuidar el territorio y el mar. Dale play a nuestro podcast y sumérgete en estos testimonios sonoros sobre la vida y el futuro sostenible de las zonas costeras.”
+                    <p class="text-white-p mt-3 intro-home ">“¿Puedes escuchar el mar cuando acercas a tu oído una caracola marina? Te tenemos una invitación... a conocer el sonido de la costa, las voces de sus habitantes, sus preocupaciones y sus formas de cuidar el territorio y el mar. Dale play a nuestro podcast y sumérgete en estos testimonios sonoros sobre la vida y el futuro sostenible de las zonas costeras.”
                     </p>
                 </div>
               </div>
-              <div class="mt-5 pt-5">
-                <video width="100%" height="100%" id="video" preload="metadata" poster="img/home/postervideo.jpg" controls>
+              <div class=" row justify-content-center mt-3">
+                <video width="70%" height="70%" id="video" preload="metadata" poster="img/home/postervideo.jpg" controls>
                   <source src="img/home/intro_caracola_v1.mp4" type="video/mp4">
                 </video>
               </div>
@@ -188,7 +207,7 @@
               <div class="row gx-4 gx-lg-5 justify-content-center">
                   <div class="col-lg-8 text-center pt-5">
                       <p class="text-white intro-home">En nuestro <span class="regular-bold">Proyecto Caracola</span>, buscamos tus historias, anécdotas, problemáticas y desafíos en torno a la costa y su sostenibilidad.</p>
-                      <p class="text-white intro-home">Tu relato podrá ser parte de este, el cual recoge las vivencias de diversas personas en las zonas costeras de nuestro país.</p>
+                      <p class="text-white intro-home">Tu relato podrá ser parte de éste, el cual recoge las vivencias de diversas personas en las zonas costeras de nuestro país.</p>
                      <br>
                      <br>
                      <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -236,7 +255,7 @@
         </div>
       </section>
 
-      <!-- Partners -->  
+      <!-- Mapas -->  
       <section id="partners" class="navbar-is-white text-white section pp-scrollable d-flex align-items-center position-absolute">
         <div class="intro">
           <div class="scroll-wrap">
@@ -850,17 +869,46 @@
             </div>
         </div>
     </div>
-
-
-
-
-
+    
         </div>
            </div>
           </div>
         </div>
       </section>
-  </div>
+
+
+<!-- Footer
+  <footer class="bg-primary" style="border-top: 1px solid white;">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <a href="https://www.iniciativamilenio.cl/" target="_blank">
+                    <img src="assets/img/logo_Milenio.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://fef.cl/" target="_blank">
+                    <img src="assets/img/logos-fef-03.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://socioecologiacostera.cl/" target="_blank">
+                    <img src="assets/img/logo_Secos.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class=" container footer-bg">
+    <div class="row px-4 px-lg-5 justify-content-center align-items-center">
+        <div class="small text-center text-white">Sitio desarrollado por FEF </div>
+    </div>
+</footer>
+  </div> -->
+
+
+  
   <!-- Scrollbar -->
    <div class="progress-nav">
     <ul class="navbar-nav">
@@ -873,6 +921,8 @@
       <li data-menuanchor="partners"></li>
     </ul>
   </div>
+
+    
   <!-- Optional JavaScript -->
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/popper.min.js" ></script>
@@ -936,4 +986,5 @@
     }
     </script>
 </body>
+
 </html>
