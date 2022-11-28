@@ -1489,6 +1489,10 @@ font-size: 2rem;
   display: none;
 }
 
+audio {
+  height: 1.8rem;
+  width: 20rem;
+}
 
 .audio-player {
   position: relative;
