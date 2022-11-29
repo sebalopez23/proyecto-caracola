@@ -552,6 +552,8 @@ ion-icon{
   border-bottom: 1px solid rgba(52,52,52,0.1);
   height:4.7rem;
   background-color: #4B5ECD;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1rem;
 }
 
 
@@ -647,7 +649,7 @@ ion-icon{
 }
 
 .navbar-bottom{
-  font-family: 'Karla', sans-serif;
+  font-family: 'Prompt', sans-serif;
   color: #000;
 }
 
@@ -702,7 +704,7 @@ ion-icon{
 }
 
 .navbar-nav-desctop{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Prompt', sans-serif important;
   font-size:0.8rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -711,6 +713,8 @@ ion-icon{
 }
 
 .nav-link{
+  font-family: 'Prompt', sans-serif !important;
+  font-size: 1rem;
   padding: 0;
 }
 
@@ -857,17 +861,25 @@ ion-icon{
 
 @media (min-width: 576px){
   .navbar-mobile{
+    width: 70%;
+    max-width: 32rem;
+  }
+}
+
+@media (min-width: 997px){
+  .navbar-mobile{
     width: 50%;
     max-width: 32rem;
   }
 }
 
-.navbar-mobile-footer{
+.navbar-mobile-footer {
   margin-top: auto;
   color: #fff;
 }
 
 .navbar-nav-mobile{
+  margin: 0 auto;
   display: block;
   font-size:2.5vh;
   margin-top: 8vh;
@@ -1056,7 +1068,8 @@ h1 + .line{
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  padding: 8rem 0 6rem;
+  padding: 0 auto;
+  /* padding: 8rem 0 6rem; */
   white-space: normal;
 }
 
@@ -1241,18 +1254,21 @@ font-size: 2rem;
 
 /* 3.5 Skills */
 
-
+/* 
 .photo-icon{
-  position: absolute;
-  box-shadow: 0 5px 15px 5px rgba(16,16,16,.1);
-  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0; */
+  /* box-shadow: 0 5px 15px 5px rgba(16,16,16,.1); */
+  /* overflow: hidden;
   transition:all .6s .4s ease;
   opacity: 0;
-}
-
+} */
+/* 
 .photo-icon-1{
-  top:-50px;
-  left:30%
+  position:absolute;
+  top: 30px;
+  left:10px
 }
 
 .photo-icon-2{
@@ -1280,7 +1296,7 @@ font-size: 2rem;
   opacity: 1;
   bottom:-50px;
   transition-delay: 1s
-}
+} */
 
 .progress{
   height: 6px;
@@ -1602,6 +1618,7 @@ audio {
 .dropdown-menu.show, .dropdown-item {
 background-color: #4A60CF;
 border:none;
+font-size: 1rem;
 }
 
 .dropdown-item {
@@ -1613,12 +1630,72 @@ border:none;
   color: #F27961 !important;
   }
 
+  .m-nav {
+   font-size: 0.8rem;
+    }
+
+
+
 /* Home */
 .icon-text { 
   font-size: 0.8rem;
   font-weight: 300;
   /* letter-spacing: 0.2rem; */
 }
+
+
+
+/* PRUEBA */
+
+@keyframes fadeOutDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
+
+ .texto-audio {
+  font-weight: 200;
+} 
+
+ .intro-home {
+  font-weight: 300;
+  font-size: 1.2rem;
+} 
+
+.cuñas-home {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.light-text {
+font-weight: 200;
+font-size: 1.1rem;
+}
+
+.nombre-personaje {
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.wsp-btn {
+  border: none;
+  } 
+
+.wsp-btn:hover  {
+  background-color: rgb(212, 98, 57);
+  border: none;
+  color: white;
+  } 
+
+  .wsp-btn-text .wsp-text {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem !important;
+  }
+
 
 #mapa {
   height: 75vh !important;
@@ -1645,11 +1722,16 @@ border:none;
     color: #fc8870 !important;
     transition:all 0.5s !important;
   }
- 
+
+  .nav-link:hover{
+    color: #fc8870 !important;
+    transition:all 0.5s !important;
+  }
+
 .min_map_subtitle {
    font-weight: 400 !important;
    /* font-size: 30px; */
-   letter-spacing: 0.2rem; 
+   /* letter-spacing: 0.2rem;  */
    color: white;
    transition:all 0.5s !important;
    } 
@@ -1659,56 +1741,212 @@ border:none;
     text-decoration:none !important;
   }
 
-  footer {
+  .footer {
     position: relative;
-    bottom: 0;
-  }
+    bottom: 0
+   }
 
 
-/* .min-subt {
-      font-weight: 200;
-  }   */
+/* Capitulo  */
 
-  
-/* .titulo-fef {
+/* .podcast-title {
+  position: relative;
+  top: 68px;
+  left: 30px;
+}
+
+.p-title {
+  font-weight: 300 !important;
+  font-size: 2.5rem !important; 
+  letter-spacing: 0.5rem;
+  line-height: 1rem !important; 
+}
+
+.p-intro-title {
+  position:relative;
+  top: 16px;
+  left: 30px;
+}
+
+.p-subtitle {
+  font-weight: 200 !important;
+  font-size: 1.25rem;
+  letter-spacing: 0.5rem;
+} */
+
+  /* Nuestro proyecto */
+
+  .project-title  {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  } 
+
+  .titulo-proyecto {
+    position: relative;
+    top:60px;
+    left:20px;
+    /* letter-spacing: 3%; */
+  } 
+
+
+  .titulo-fef {
   font-size: 2.2rem;
   font-weight: 400 !important;
   text-align: left;
   line-height: 2.4rem;
-  letter-spacing: 3%;
-} */
+  /* letter-spacing: 3%; */
+} 
 
-  /* .chapter-container {
+
+
+/* Media Queries */
+
+/* Queries Home */
+@media screen and (max-width: 1150px) {
+  .min_map_title {
+    font-size: 2rem !important;
+    letter-spacing: 0.6rem !important;
+    } 
+   
+  .min_map_subtitle {
+     font-size: 1.2rem !important;
+     } 
+  }
+
+@media (max-width: 576px){
+    .chapter-container {
+    width: 300px;
+    }
+  .zona-container {
+    justify-content: center;
+  }
+}
+
+
+/* Queries Capítulo */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .cap-title {
+    font-size: 3.4rem !important;
+    /* letter-spacing: 10px !important; */
+    } 
+    .p-intro-title {
+     top: 16px !important; 
+    }
+    .cap-sect-title  {
+      font-size: 2.8rem !important;
+      /* letter-spacing: 8px !important;
+      line-height: 45px */
+      } 
+      .p-title {
+        font-size: 2rem !important; 
+        line-height: auto !important;
+        top: 80px !important;
+      }
+      .p-subtitle {
+        font-size: 1rem !important; 
+      }
+    .p-width {
+      width: 90% !important;
+     }
+     .cap2-title {
+      font-size: 3rem !important;
+    }
+
+  }
+
+   @media (max-width: 767px) {
+   .owl-carousel .owl-item img {
+    height: 250px;
+  }
+  }
+
+    /* .cap-title {
+      font-size: 3.2rem !important;
+      letter-spacing: 10px !important;
+      }  
+    .cap-sect-title  {
+        font-size: 1.9rem !important;
+        line-height: 34px;
+    }   
+    .podcast-title  {
+     top: 76px; 
+     left: 6px;
+  }
+    .p-title {
+      font-size: 1.5rem !important; 
+      line-height: 30px !important;
+      top: 76px !important;
+      letter-spacing: 6px !important;
+    }
+    .p-intro-title {
+     top: 20px !important;
+     left: 6px !important;
+     line-height: 30px !important;
+     letter-spacing: 6px !important;
+    }
+    .vision-p-title {
+      position: relative !important;
+      top: 10px !important;
+      left: 6px !important;
+    }
+    .p-subtitle {
+      font-size: 0.8rem !important; 
+      line-height: auto !important;
+      letter-spacing: 5px;
+    }
+    .cap2-title {
+      font-size: 1.6rem !important;
+    }
+    .p-width {
+      width: 90% !important;
+     } */
+  
+
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .podcast-title  {
+      top: 75px; 
+   }
+  } 
+
+
+
+
+
+ .menu-link, .menu-cap, .submenu-text  {
+ letter-spacing: 1.2px;
+} 
+
+ .submenu-text {
+ text-align: left !important; 
+  font-weight: 300 !important;
+  font-size: 22px;
+  cursor: pointer;
+ } 
+
+  .btn .submenu-text{
+  transition:all 0.5s;
+  color: #fff;
+ } 
+ .btn .submenu-text:hover{
+  color: #fc8870;
+    transition:all 0.5s;
+ } 
+ .btn .submenu-text:active {
+  color: #fc8870 !important;
+}
+
+/* .min_map_title {
+  font-weight: 100 !important;
+  font-size: 55px;
+  letter-spacing: 14px;
+  text-align: left;
+  }  */
+
+  
+
+
+  .chapter-container {
     padding: 20px;
   }
-
-  .podcast-title {
-    position: relative;
-    top: 68px;
-    left: 30px;
-  }
-
-  .p-title {
-    font-weight: 300 !important;
-    font-size: 2.5rem !important; 
-    letter-spacing: 8px;
-    line-height: 1rem !important; 
-  }
-
-  .p-intro-title {
-    position:relative;
-    top: 16px;
-    left: 30px;
-  }
-
-  .p-subtitle {
-    font-weight: 200 !important;
-    font-size: 1.25rem;
-    letter-spacing: 8px;
-  } */
-/* 
-
-
-
-
 
