@@ -72,7 +72,7 @@
 
 
     /* Navbar mobile */
-    $('.navbar-nav-mobile li a').on('click', function(){
+    $('.navbar-nav-mobile li a').on('hover', function(){
     	$('body').removeClass('menu-is-open');
     	$('.navbar-nav-mobile li a').removeClass('active');
     	$(this).addClass('active');
