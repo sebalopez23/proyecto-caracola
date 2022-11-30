@@ -15,11 +15,11 @@
   </head>
 <body>
    <!-- Loader -->
-   <div class="loader">
+   <!--<div class="loader">
     <div class="spinner">
     	<img src="img/Logo.png" class="img-fluid">
     </div>
-   </div>
+   </div>-->
   
     <!-- Click capture -->
    <div class="click-capture"></div>
@@ -29,11 +29,11 @@
       <div class="position-relative w-100">
 
 	    <!-- Brand-->
-    <a class="navbar-brand" href="index.html"><img src="img/Logo.png" class="img-fluid" width="80"></a>
-		<div class="container d-block">
-			<span class="email  my-0 d-none d-md-block">SECOS</span>
-      <a class="phone my-0 d-none d-md-block" href="nuestro-proyecto.html">NUESTRO PROYECTO</a>
-	        
+      <a class="navbar-brand" href="index.html"><img src="img/Logo.png" class="img-fluid" width="80"></a>
+			<div class="container d-block">
+			  <a class="nav-link email my-0 d-none d-md-block" href="https://socioecologiacostera.cl/" target="_blank">SECOS</a>
+		      <a class="nav-link phone my-0 d-none d-md-block" href="nuestro-proyecto.html">NUESTRO PROYECTO</a>
+	
 		</div>
 
 	    <!-- Toggler -->
@@ -85,20 +85,40 @@
     <nav  class="navbar navbar-mobile">
       <ion-icon class="close" name="close-outline"></ion-icon>
 
-      <!-- language -->
+        <!-- language -->
       <ul class="language">
-         <li class="active"><a href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
-         <li><a href="#">SECOS</a></li>
+        <li class="active"><a class="active nav-link m-nav" href="index.html">HOME</a></li>
+         <li><a class="nav-link m-nav" href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
+         <li><a class="nav-link m-nav" href="https://socioecologiacostera.cl/" target="_blank">SECOS</a></li>
       </ul>
-
+      
       <ul class="navbar-nav navbar-nav-mobile">
-        <li><a class="nav-link">ZONA 1: COQUIMBO</a></li>
-        <li><a class="nav-link">ZONA 2: VALPARAÍSO</a></li>
-        <li><a class="nav-link">ZONA 3: BÍO BÍO</a></li>
-        <li><a class="nav-link">ZONA 4: LOS LAGOS</a></li>
+        <li><a class="nav-link light-text">REGIÓN: COQUIMBO</a></li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link light-text dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            REGIÓN: VALPARAÍSO
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-white" href="capitulo-1.html">REFUGIOS MARINOS ZAPALLAR</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item text-white" href="#capitulo-1.html">ALGARROBO</a>
+            </div>
+          </li>
+        <li><a class="nav-link light-text">REGIÓN: BÍO BÍO</a></li>
+        <li class="nav-item dropdown">
+            <a class="light-text nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            REGIÓN: LOS LAGOS
+            </a>
+            <div class="dropdown-menu text-white light-text" aria-labelledby="navbarDropdown">
+                <p class="">HUALAIHHUÉ</p>
+              <a class="dropdown-item text-white" href="capitulo-1.html">BOYA OCEANOGRÁFICA CALETA EL MANZANO</a>
+              <a class="dropdown-item text-white" href="#capitulo-2.html">ACIDIFICACIÓN HORNOPIRÉN</a>
+            </div>
+          </li>
       </ul>
-      <div class="navbar-mobile-footer">
-        <p>© Denzel. 2020. All Rights Reserved.</p>
+      <div class="navbar-mobile-footer ">
+         <a class="text-white nav-link" href="https://fef.cl/" target="_blank">Desarrollado por FEF</a>
       </div>
     </nav>
 
@@ -111,7 +131,7 @@
 	          <div class="container">
 	            <div class="row">
 	              <div class="col-lg-6 col-xl-5">
-	                <h1 class="text-white">NUESTRO PROYECTO CARACOLA</h1>
+	                <h1 class="text-white project-title">NUESTRO PROYECTO CARACOLA</h1>
 	            	</div>
 	              <div class="col-lg-6 col-xl-5">
 	                <p class="text-white">¿Cómo conectamos las voces e historias de vida, los saberes tradicionales, ancestrales, los conocimientos de las personas y comunidades en torno a la costa, con la investigación y la ciencia de la sostenibilidad costera?</p>
@@ -128,7 +148,7 @@
 	          <div class="container">
 	            <div class="row align-items-center">
 	              <div class="mt-5 mt-lg-0 col-lg-5 offset-lg-1">
-	                <h2 class="text-white">Sobre el proyecto</h2>
+	                <h2 class="text-white">SOBRE EL PROYECTO</h2>
 	                <p class="parrafos-proyecto light-text">En <span class="regular-bold">Proyecto Caracola</span>, iniciativa del <span class="regular-bold">Instituto Milenio en Socio-Ecología Costera (SECOS)</span>, en conjunto con <span class="regular-bold">Fundación Encuentros del Futuro</span>, desarrollamos un espacio de interconexión y vinculación, con relatos que nos cuenten historias de conocimientos y saberes que se cruzan y entrelazan, con miras a un futuro sostenible para nuestras costas.</p>
 		          	</div>
 	              <div class="col-lg-5">
@@ -147,15 +167,17 @@
         <div class="intro">
           <div class="scroll-wrap">
 	          <div class="container">
+
 	            <div class="row align-items-center">
+
 	              <div class="col-lg-5">
-	                <div class="position-relative">
-	                	<div class="photo-icon photo-icon-1">
-	                		<h2 class="titulo-proyecto text-white">¿QUÉ ES EL INSTITUTO <br>MILENIO SECOS?</h2>
-	                	</div>
+		
+                    <h2 class="titulo-proyecto text-white">¿QUÉ ES EL INSTITUTO <br>MILENIO SECOS?</h2>
+
 	                	<img alt="" class="border-radius w-100" src="img/proyecto/img-2.png" style="width: 100%!important;">
 	                </div>
-	              </div>
+	           
+
 	              <div class="mt-5 mt-lg-0 col-lg-5 offset-lg-1">
 	                <p class="parrafos-proyecto mt-5 light-text">El <span class="regular-bold ">Instituto Milenio en Socio-Ecología Costera (SECOS),</span> es un centro de investigación de excelencia del programa Milenio de la Agencia Nacional de Investigación y Desarrollo ANID, parte del Ministerio de Ciencia, Tecnología, Conocimiento e Innovación de Chile. <span class="regular-bold">Proyecto Caracola</span>, es una iniciativa financiada con fondos de Proyección al Medio Externo (PME) del programa Milenio, instancia que promueve actividades de vinculación y de comunicación de la ciencia de los centros Milenio. Más información sobre <span class="regular-bold">SECOS</span> en <span class="regular-bold">www.socioecologiacostera.cl</span></p>
 		          	</div>
@@ -186,6 +208,47 @@
         	</div>
         </div>
       </section>
+
+
+<!-- Footer -->
+<section id="footer" class="navbar-is-white text-white section pp-scrollable position-absolute">
+  <div class="intro">
+    <div class="scroll-wrap">
+
+      <div class="container px-4 px-lg-5 text-center">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col">
+              <a href="https://www.iniciativamilenio.cl/" target="_blank">
+                  <img src="img/home/logo_Milenio.png">
+              </a>
+          </div>
+          <div class="col">
+              <a href="https://fef.cl/" target="_blank">
+                  <img src="img/home/logos-fef-03.png">
+              </a>
+          </div>
+          <div class="col">
+              <a href="https://socioecologiacostera.cl/" target="_blank">
+                  <img src="img/home/logo_Secos.png">
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <div class="container footer-bg">
+      <div class="row px-4 px-lg-5 justify-content-center align-items-center">
+          <div class="small text-center text-white">Sitio desarrollado por FEF </div>
+      </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+</section>
+
+
+
   </div>
 
   <!-- Scrollbar -->

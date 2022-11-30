@@ -21,10 +21,6 @@
         }
     });
 
-
-
-    
-
     /* Full page scroll*/
     if ($('#pagepiling').length > 0){
 
@@ -32,7 +28,7 @@
             scrollingSpeed: 280,
             navigation:false,
             menu: '.navbar-nav',
-            anchors: ['home', 'about', 'experience', 'skills', 'projects', 'partners', 'testimonials', 'news', 'contact'],
+            anchors: ['home', 'about', 'experience', 'skills', 'icons', 'mapas', 'footer'],
             afterRender: function(anchorLink, index){ 
               NavbarColor();
 
@@ -72,7 +68,7 @@
 
 
     /* Navbar mobile */
-    $('.navbar-nav-mobile li a').on('click', function(){
+    $('.navbar-nav-mobile li a').on('hover', function(){
     	$('body').removeClass('menu-is-open');
     	$('.navbar-nav-mobile li a').removeClass('active');
     	$(this).addClass('active');

@@ -33,8 +33,8 @@
 	    <!-- Brand-->
 	    <a class="navbar-brand" href="index.html"><img src="img/Logo.png" class="img-fluid" width="80"></a>
 			<div class="container d-block">
-			  <span class="email  my-0 d-none d-md-block">SECOS</span>
-		      <a class="phone  my-0 d-none d-md-block" href="nuestro-proyecto.html">NUESTRO PROYECTO</a>
+			  <a class="nav-link email my-0 d-none d-md-block" href="https://socioecologiacostera.cl/" target="_blank">SECOS</a>
+		      <a class="nav-link phone my-0 d-none d-md-block" href="nuestro-proyecto.html">NUESTRO PROYECTO</a>
 			</div>
 
 	    <!-- Toggler -->
@@ -88,20 +88,41 @@
 
       <!-- language -->
       <ul class="language">
-         <li class="active"><a href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
-         <li><a href="#">SECOS</a></li>
+        <li class="active"><a class="active nav-link m-nav" href="index.html">HOME</a></li>
+         <li><a class="nav-link m-nav" href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
+         <li><a class="nav-link m-nav" href="https://socioecologiacostera.cl/" target="_blank">SECOS</a></li>
       </ul>
-
+      
       <ul class="navbar-nav navbar-nav-mobile">
-        <li><a class="nav-link">ZONA 1: COQUIMBO</a></li>
-        <li><a class="nav-link">ZONA 2: VALPARAÍSO</a></li>
-        <li><a class="nav-link">ZONA 3: BÍO BÍO</a></li>
-        <li><a class="nav-link">ZONA 4: LOS LAGOS</a></li>
+        <li><a class="nav-link light-text">REGIÓN: COQUIMBO</a></li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link light-text dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            REGIÓN: VALPARAÍSO
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-white" href="capitulo-1.html">REFUGIOS MARINOS ZAPALLAR</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item text-white" href="#capitulo-1.html">ALGARROBO</a>
+            </div>
+          </li>
+        <li><a class="nav-link light-text">REGIÓN: BÍO BÍO</a></li>
+        <li class="nav-item dropdown">
+            <a class="light-text nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            REGIÓN: LOS LAGOS
+            </a>
+            <div class="dropdown-menu text-white light-text" aria-labelledby="navbarDropdown">
+                <p class="">HUALAIHHUÉ</p>
+              <a class="dropdown-item text-white" href="capitulo-1.html">BOYA OCEANOGRÁFICA CALETA EL MANZANO</a>
+              <a class="dropdown-item text-white" href="#capitulo-2.html">ACIDIFICACIÓN HORNOPIRÉN</a>
+            </div>
+          </li>
       </ul>
-      <div class="navbar-mobile-footer">
-        <p>© Denzel. 2020. All Rights Reserved.</p>
+      <div class="navbar-mobile-footer ">
+         <a class="text-white nav-link" href="https://fef.cl/" target="_blank">Desarrollado por FEF</a>
       </div>
     </nav>
+
 
     <div id="pagepiling">
       <!-- Masthead -->  
@@ -137,12 +158,12 @@
               <div class="row justify-content-center">
                 <div class="col-lg-8 text-center mt-5 text-white">
                     <h2 class="text-white mb-0">RELATOS DE VIDA Y DE CIENCIA</h2>
-                    <p class="text-white-p mt-5 intro-home ">“¿Puedes escuchar el mar cuando acercas a tu oído una caracola marina? Te tenemos una invitación... a conocer el sonido de la costa, las voces de sus habitantes, sus preocupaciones y sus formas de cuidar el territorio y el mar. Dale play a nuestro podcast y sumérgete en estos testimonios sonoros sobre la vida y el futuro sostenible de las zonas costeras.”
+                    <p class="text-white-p mt-3 intro-home ">“¿Puedes escuchar el mar cuando acercas a tu oído una caracola marina? Te tenemos una invitación... a conocer el sonido de la costa, las voces de sus habitantes, sus preocupaciones y sus formas de cuidar el territorio y el mar. Dale play a nuestro podcast y sumérgete en estos testimonios sonoros sobre la vida y el futuro sostenible de las zonas costeras.”
                     </p>
                 </div>
               </div>
-              <div class="mt-5 pt-5">
-                <video width="100%" height="100%" id="video" preload="metadata" poster="img/home/postervideo.jpg" controls>
+              <div class=" row justify-content-center mt-3">
+                <video width="70%" height="70%" id="video" preload="metadata" poster="img/home/postervideo.jpg" controls>
                   <source src="img/home/intro_caracola_v1.mp4" type="video/mp4">
                 </video>
               </div>
@@ -159,20 +180,20 @@
               <div class="row gx-4 gx-lg-5 justify-content-center">
                   <div class="col-lg-6 text-center">
                       <img src="img/home/img-3.png">
-                      <p class="text-white-p cuñas-home mb-4">"Desde el reconocimiento de ese lugar común que teníamos todos, este interés por el mar, empezamos a iniciar las conversaciones"</p>
-                      <p class="text-white-p nombre-personaje">Paulina Martínez</p>
+                      <p class="text-white-p light-text cuñas-home mb-4">"Desde el reconocimiento de ese lugar común que teníamos todos, este interés por el mar, empezamos a iniciar las conversaciones"</p>
+                      <p class="text-white-p light-text nombre-personaje">Paulina Martínez</p>
                   </div>
               </div>
               <div class="row gx-4 gx-lg-5 justify-content-between">
                 <div class="col-md-6 text-center">
                     <img src="img/home/img-1.png">
                     <p class="text-white-p cuñas-home light-text mb-4">"Yo siempre me enojo con lo que es la construcción en la costa, en cualquier parte, en X lugar, con la gente que quiere tener más, teniendo algo, quieren llegar al mar, quieren romper el mar y quitarle lugar al mar"</p>
-                    <p class="text-white-p nombre-personaje">Martín González</p>
+                    <p class="text-white-p light-text nombre-personaje">Martín González</p>
                 </div>
                 <div class="col-md-6 text-center pb-5">
                     <img src="img/home/img-2.png">
-                    <p class="text-white-p cuñas-home mb-4">"Aquí yo pertenezco al movimiento salvemos el Río Cisnes que desde el año 2017 nosotros estamos luchando"</p>
-                    <p class="text-white-p nombre-personaje">Yolanda Subiabre</p>
+                    <p class="text-white-p light-text cuñas-home mb-4">"Aquí yo pertenezco al movimiento salvemos el Río Cisnes que desde el año 2017 nosotros estamos luchando"</p>
+                    <p class="text-white-p light-text nombre-personaje">Yolanda Subiabre</p>
                 </div>
               </div>
             </div>
@@ -188,7 +209,7 @@
               <div class="row gx-4 gx-lg-5 justify-content-center">
                   <div class="col-lg-8 text-center pt-5">
                       <p class="text-white intro-home">En nuestro <span class="regular-bold">Proyecto Caracola</span>, buscamos tus historias, anécdotas, problemáticas y desafíos en torno a la costa y su sostenibilidad.</p>
-                      <p class="text-white intro-home">Tu relato podrá ser parte de este, el cual recoge las vivencias de diversas personas en las zonas costeras de nuestro país.</p>
+                      <p class="text-white intro-home">Tu relato podrá ser parte de éste, el cual recoge las vivencias de diversas personas en las zonas costeras de nuestro país.</p>
                      <br>
                      <br>
                      <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -206,12 +227,12 @@
         </div>
       </section>
 
-      <!-- Projects -->  
-      <section id="projects" class="navbar-is-white text-white section pp-scrollable position-absolute">
+      <!-- Icons -->  
+      <section id="icons" class="navbar-is-white text-white section pp-scrollable position-absolute">
         <div class="intro">
           <div class="scroll-wrap">
             <div class="container px-4 px-lg-5">
-              <div class="row gx-4 gx-lg-5">
+              <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-4"><img src="img/icons/mouse_scroll.svg" width="120" class="img-fluid"></div>
@@ -236,14 +257,14 @@
         </div>
       </section>
 
-      <!-- Partners -->  
-      <section id="partners" class="navbar-is-white text-white section pp-scrollable d-flex align-items-center position-absolute">
+      <!-- Mapas -->  
+      <section id="mapas" class="navbar-is-white text-white section pp-scrollable d-flex align-items-center position-absolute">
         <div class="intro">
           <div class="scroll-wrap">
 	          <div class="container">
       <div class="row map-container align-items-center justify-content-center">
 
-          <div class="col-xs-4 col-sm-4 col-md-4 col-ml-6 col-lg-6">
+          <div class="col-lg-4 col-xs-6 col-sm-6 text-center text-lg-left">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 869.136 3719.887" id="mapa">
                   <defs>
                       <style>
@@ -769,8 +790,8 @@
           </div>
 
         
-          <div class="region col-xs-4 col-sm-4 col-md-6 col-ml-6 col-lg-6" id="region">
-            <a href="index.html#region"></a>
+          <div class="col-lg-4 col-xs-6 col-sm-6" id="region">
+            <a href="#region"></a>
             
             <!-- Zona 1 -->
               <div class="zona1 fade-in-image"  style="display: none;">
@@ -779,7 +800,7 @@
                   <img class="img-fluid" src="img/home/Valparaiso.png" alt="foto-region-valparaiso"><!-- style="position: relative; left: 15%;"  -->
               </div>
 
-              <div style="position: absolute; top: 30%; color: white; ">
+              <div style="position: absolute; top: 20%; color: white; ">
                   <h6 class="min-subt">ZONA 1</h4>
                   <h2 class="regular-bold min_map_title light-text" >REGIÓN DE<br>COQUIMBO</h2>
                   <br>
@@ -799,7 +820,7 @@
                               alt="foto-region-valparaiso"> <!-- style="position: relative; left: 15%;"  -->
                       </div>
 
-                      <div style="position: absolute; top:30%; color: white;">
+                      <div style="position: absolute; top:20%; color: white;">
                           <h6 class="min-subt text-white">ZONA 2</h4>
                           <h2 class="regular-bold min_map_title light-text text-white" >REGIÓN DE<br>VALPARAÍSO</h2>
                           <br>
@@ -820,7 +841,7 @@
                             alt="foto-region-biobio"><!-- style="position: relative; left: 15%;"  -->
                     </div>
 
-                    <div style="position: absolute; top: 30%; color: white; ">
+                    <div style="position: absolute; top:20%; color: white; ">
                         <h6 class="min-subt">ZONA 2</h4>
                         <h2 class="regular-bold min_map_title light-text" >REGIÓN DE<br>BIO BIO</h2>
                         <br>
@@ -839,7 +860,7 @@
                             <img class="img-fluid pt-5" src="img/home/mapa-loslagos.png" alt="foto-region-los-lagos"><!-- style="position: relative; left: 15%;"  -->
                </div>
        
-               <div style="position: absolute; top: 30%; color: white; ">
+               <div style="position: absolute; top:20%; color: white; ">
                 <h6 class="min-subt">ZONA 4</h4>
                 <h2 class="regular-bold min_map_title light-text" >REGIÓN DE<br>LOS LAGOS</h2>
                 <br>
@@ -850,17 +871,54 @@
             </div>
         </div>
     </div>
-
-
-
-
-
+   
         </div>
            </div>
           </div>
         </div>
-      </section>
-  </div>
+        
+</section>
+
+<!-- Footer -->
+<section id="footer" class="navbar-is-white text-white section pp-scrollable position-absolute">
+    <div class="intro">
+      <div class="scroll-wrap">
+
+        <div class="container px-4 px-lg-5 text-center">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col">
+                <a href="https://www.iniciativamilenio.cl/" target="_blank">
+                    <img src="img/home/logo_Milenio.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://fef.cl/" target="_blank">
+                    <img src="img/home/logos-fef-03.png">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://socioecologiacostera.cl/" target="_blank">
+                    <img src="img/home/logo_Secos.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container footer-bg">
+        <div class="row px-4 px-lg-5 justify-content-center align-items-center">
+            <a class="text-white nav-link" href="https://fef.cl/" target="_blank">Desarrollado por FEF</a>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+  </section>
+
+</div>
+
+
   <!-- Scrollbar -->
    <div class="progress-nav">
     <ul class="navbar-nav">
@@ -873,6 +931,8 @@
       <li data-menuanchor="partners"></li>
     </ul>
   </div>
+
+    
   <!-- Optional JavaScript -->
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/popper.min.js" ></script>
@@ -936,4 +996,5 @@
     }
     </script>
 </body>
+
 </html>
