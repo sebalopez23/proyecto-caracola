@@ -31,8 +31,8 @@
 			<!-- Brand-->
 			<a class="navbar-brand" href="index.html"><img src="img/Logo.png" class="img-fluid" width="80"></a>
 			<div class="container d-block">
-				<span class="email  my-0 d-none d-md-block">SECOS</span>
-				<a class="phone  my-0 d-none d-md-block" href="nuestro-proyecto.html">NUESTRO PROYECTO</a>
+			  <a class="nav-link email my-0 d-none d-md-block" href="https://socioecologiacostera.cl/" target="_blank">SECOS</a>
+		      <a class="nav-link phone my-0 d-none d-md-block" href="nuestro-proyecto.html">NUESTRO PROYECTO</a>
 			</div>
 
 			<!-- Toggler -->
@@ -81,21 +81,22 @@
 	  </div>
   </nav>
 
-	 <!-- Navbar Mobile -->  
-	 <nav  class="navbar navbar-mobile">
+	<!-- Navbar Mobile -->  
+    <nav  class="navbar navbar-mobile">
 		<ion-icon class="close" name="close-outline"></ion-icon>
   
 		<!-- language -->
 		<ul class="language">
-		   <li class="active"><a href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
-		   <li><a href="#">SECOS</a></li>
+		  <li class="active"><a class="active nav-link m-nav" href="index.html">HOME</a></li>
+		   <li><a class="nav-link m-nav" href="nuestro-proyecto.html">NUESTRO PROYECTO</a></li>
+		   <li><a class="nav-link m-nav" href="https://socioecologiacostera.cl/" target="_blank">SECOS</a></li>
 		</ul>
 		
 		<ul class="navbar-nav navbar-nav-mobile">
-		  <li><a class="nav-link">REGIÓN: COQUIMBO</a></li>
+		  <li><a class="nav-link light-text">REGIÓN: COQUIMBO</a></li>
   
 		  <li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <a class="nav-link light-text dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			  REGIÓN: VALPARAÍSO
 			  </a>
 			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -104,34 +105,24 @@
 				<a class="dropdown-item text-white" href="#capitulo-1.html">ALGARROBO</a>
 			  </div>
 			</li>
-		  <li><a class="nav-link">REGIÓN: BÍO BÍO</a></li>
+		  <li><a class="nav-link light-text">REGIÓN: BÍO BÍO</a></li>
 		  <li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <a class="light-text nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			  REGIÓN: LOS LAGOS
 			  </a>
-			  <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
-				  HUALAIHHUÉ
+			  <div class="dropdown-menu text-white light-text" aria-labelledby="navbarDropdown">
+				  <p class="">HUALAIHHUÉ</p>
 				<a class="dropdown-item text-white" href="capitulo-1.html">BOYA OCEANOGRÁFICA CALETA EL MANZANO</a>
 				<a class="dropdown-item text-white" href="#capitulo-2.html">ACIDIFICACIÓN HORNOPIRÉN</a>
 			  </div>
 			</li>
 		</ul>
-		<div class="navbar-mobile-footer">
-		  <p>© Denzel. 2020. All Rights Reserved.</p>
+		<div class="navbar-mobile-footer ">
+		   <a class="text-white nav-link" href="https://fef.cl/" target="_blank">Desarrollado por FEF</a>
 		</div>
 	  </nav>
 
 	<div id="pagepiling">
-      <ul class="navbar-nav navbar-nav-mobile">
-        <li><a class="nav-link">REGIÓN: COQUIMBO</a></li>
-        <li><a class="nav-link">REGIÓN VALPARAÍSO</a></li>
-        <li><a class="nav-link">REGIÓN BÍO BÍO</a></li>
-        <li><a class="nav-link">REGIÓN LOS LAGOS</a></li>
-      </ul>
-      <div class="navbar-mobile-footer">
-        <p>© Denzel. 2020. All Rights Reserved.</p>
-      </div>
-    </nav>
 
 		<!-- Masthead -->
 		<section id="home"
@@ -195,8 +186,11 @@
 					<div class="container">
 						<div class="row align-items-center justify-content-center text-left">
 							<div class="col-md-7">
-								<div class="position-relative">
+								<div class="cont_podcast-title position-relative">
 									<h2 class="text-white mb-0">INTRODUCCIÓN</h2>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel a, quaerat aliquam fugit
+										odit nam, illo natus reprehenderit officiis minus velit, perferendis fuga quia
+										dignissimos dolorum eos repellendus corrupti ab.</p>
 									<img alt="" class="border-radius w-100 mt-3 mb-4" src="img/capitulo-1/gif/0.gif"
 										style="width:100%">
 								</div>
@@ -221,7 +215,7 @@
 			<div class="intro">
 				<div class="scroll-wrap">
 					<div class="container">
-						<div class="col-12 col-md-9 container-column">
+						<div class="cont_podcast-title col-12 col-md-9 container-column">
 							<h2 class="text-white mb-2">PROBLEMÁTICAS</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel a, quaerat aliquam fugit
 								odit nam, illo natus reprehenderit officiis minus velit, perferendis fuga quia
@@ -232,6 +226,9 @@
 								<div class="experience-item">
 									<div class="row row-experience align-items-center justify-content-center text-left">
 										<div class="col-md-7 col-12">
+											<!-- <div class="podcast-title">
+										
+											</div> -->
 											<div class="position-relative">
 												<img alt="" class="border-radius w-100 mt-3 mb-4"
 													src="img/capitulo-1/gif/1.gif" style="width:100%">
@@ -519,7 +516,7 @@
 			</div>
 		</section>
 
-	</div>
+	
 
 	<!-- Scrollbar -->
 	<div class="progress-nav">

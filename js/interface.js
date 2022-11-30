@@ -21,10 +21,6 @@
         }
     });
 
-
-
-    
-
     /* Full page scroll*/
     if ($('#pagepiling').length > 0){
 
@@ -32,7 +28,7 @@
             scrollingSpeed: 280,
             navigation:false,
             menu: '.navbar-nav',
-            anchors: ['home', 'about', 'experience', 'skills', 'projects', 'partners', 'testimonials', 'news', 'contact'],
+            anchors: ['home', 'about', 'experience', 'skills', 'icons', 'mapas', 'footer'],
             afterRender: function(anchorLink, index){ 
               NavbarColor();
 
