@@ -3,8 +3,7 @@
     width: 100%;
 }
 
-.coquimbo,
-.lagos, .biobio {
+.coquimbo, .biobio {
     fill: lightblue;
 }
 /* 
@@ -14,12 +13,12 @@
     cursor: pointer;
 } */
 
-.valpo
+.valpo, .lagos 
  {
     fill: lightsalmon;
 }
 
-.valpo:hover
+.valpo:hover, .lagos:hover
  {
     fill: #fc8870;
     cursor: pointer;
