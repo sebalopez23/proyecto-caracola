@@ -33,13 +33,13 @@ $('.valpo').click(function (e) {
 //         location.href = "index.html#region";
 //       }
 // });
-// $('.lagos').click(function (e) {
-//     e.preventDefault(); $('.zona4').show();
-//     $('.zona1, .zona2, .zona3').hide();
-//     if(screen.width < 576){
-//         location.href = "index.html#region";
-//       }
-// });
+$('.lagos').click(function (e) {
+    e.preventDefault(); $('.zona4').show();
+    $('.zona1, .zona2, .zona3').hide();
+    if(screen.width < 576){
+        location.href = "index.html#region";
+      }
+});
 
 
 
