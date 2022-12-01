@@ -60,6 +60,7 @@
 
 html {
   -webkit-font-smoothing: antialiased;
+  user-select: none;
 }
 
 body {
@@ -534,10 +535,22 @@ ion-icon {
   width: 100%;
   padding: 0 1.5rem;
   border-bottom: 1px solid rgba(52, 52, 52, 0.1);
+  /* height: 4.7rem; */
   height: 4.7rem;
   background-color: #4b5ecd;
   font-family: "Prompt", sans-serif;
   font-size: 1rem;
+}
+
+
+ a.nav-link.phone, a.nav-link.email {
+  /* font-size: 0.8rem; */
+  font-weight: 500;
+  /* padding-top: 5px; */
+} 
+
+button.toggler {
+  /* padding-top: 10px; */
 }
 
 @media (min-width: 992px) {
@@ -579,7 +592,7 @@ ion-icon {
 
 .navbar-brand {
   position: absolute;
-  font-family: "Karla", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
   color: #fff;
@@ -1592,9 +1605,6 @@ audio {
   padding: 0 auto !important;
 }
 
-.container {
-  padding-left: 5px !important;
-}
 
 /* PRUEBA */
 
@@ -1616,6 +1626,11 @@ audio {
   font-weight: 300;
   font-size: 1.2rem;
 } 
+
+.intro-project {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
 
 .cuñas-home {
   font-weight: 300;
@@ -1692,6 +1707,10 @@ audio {
   bottom: 0;
 }
 
+.fef-footer {
+  font-size: 1.2rem;
+}
+
 /* Capitulos */
 
 .cap-title {
@@ -1714,19 +1733,17 @@ audio {
 }
 
 .titulo-proyecto {
-  position: relative;
-  top: 60px;
-  left: 20px;
-  /* letter-spacing: 3%; */
-}
-
-.titulo-fef {
   font-size: 2.2rem;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   text-align: left;
   line-height: 2.4rem;
   /* letter-spacing: 3%; */
 }
+
+.titulo-proyecto-secos {
+  width: 101%;
+}
+
 
 /* Media Queries */
 
@@ -1757,6 +1774,22 @@ audio {
   }
   .zona-container {
     justify-content: center;
+  }
+}
+
+/* Queries footer */
+@media (max-width: 557px) {
+  .container {
+    padding-left: 5px !important;
+  }
+  .row-footer {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .logos-footer {
+    width: 70%;
   }
 }
 
@@ -1833,33 +1866,3 @@ audio {
     height: 250px;
   }
 }
-
-/* .menu-link, .menu-cap, .submenu-text  {
- letter-spacing: 1.2px;
-}  */
-
-/* .submenu-text {
- text-align: left !important; 
-  font-weight: 300 !important;
-  font-size: 22px;
-  cursor: pointer;
- } 
-
-  .btn .submenu-text{
-  transition:all 0.5s;
-  color: #fff;
- } 
- .btn .submenu-text:hover{
-  color: #fc8870;
-    transition:all 0.5s;
- } 
- .btn .submenu-text:active {
-  color: #fc8870 !important;
-} */
-
-/* .min_map_title {
-  font-weight: 100 !important;
-  font-size: 55px;
-  letter-spacing: 14px;
-  text-align: left;
-  }  */
