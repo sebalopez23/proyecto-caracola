@@ -304,7 +304,7 @@ label.error {
 
 /* 1.4 Buttons */
 .btn {
-  font-family: "Karla", sans-serif;
+  font-family: "Prompt", sans-serif;
   position: relative;
   display: inline-block;
   border: 0.2em solid #f27961;
@@ -544,7 +544,7 @@ ion-icon {
 
 
  a.nav-link.phone, a.nav-link.email {
-  /* font-size: 0.8rem; */
+   font-size: 0.8rem; 
   font-weight: 500;
   /* padding-top: 5px; */
 } 
@@ -1177,7 +1177,7 @@ h1 + .line {
 }
 
 .owl-nav {
-  font-family: "Tahoma";
+  font-family: "Prompt";
   position: absolute;
   right: 0;
   top: 0;
@@ -1525,7 +1525,7 @@ audio {
 
 .info-up .infotext {
   visibility: hidden;
-  width: 120px;
+  width: 160px;
   background-color: #f27961;
   color: #fff;
   text-align: center;
@@ -1538,6 +1538,7 @@ audio {
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
+  font-size: 0.75rem;
 }
 
 .info-up .infotext::after {
@@ -1567,8 +1568,15 @@ audio {
 .dropdown-item {
   background-color: #4a60cf;
   border: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
+.zona-text {
+ font-size: 0.6rem !important;
+}
+.drop1-text{
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+ }
 
 .dropdown-item {
   background-color: #4a60cf;
@@ -1654,8 +1662,10 @@ audio {
 }
 
 .wsp-btn-text {
-  font-size: 1.2rem;
-  letter-spacing: 0.05rem !important;
+  font-size: 0.8rem;
+}
+.fa.fa-whatsapp {
+ font-size: 20px;
 }
 
 #mapa {
@@ -1865,4 +1875,35 @@ audio {
   .owl-carousel .owl-item img {
     height: 250px;
   }
+  .circle.info-up  {
+    width: 20px;
+    height: 20px;
+  }
 }
+
+/* Queries Nuestro proyecto */
+
+@media (max-width: 575px) {
+  .project-title {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+  
+  .titulo-proyecto {
+    font-size: 2.4rem;
+    font-weight: 500 !important;
+    padding-top: 20px;
+  }
+
+  .titulo-proyecto-secos {
+    width: 101%;
+  }
+
+  .intro-project {
+    font-size: 1.2rem;
+    padding-top: 20px;
+  }
+}
+
+
+
