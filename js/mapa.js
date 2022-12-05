@@ -1,9 +1,7 @@
 // $('.valpo').click(function() {
 //    $('.zona1').toggle();
 //    $('.zona2').hide();
-//    if(screen.width < 576){
-//     location.href = "index.html#region";
-//   }
+//    
 // });
 // $('.coquimbo').click(function() {
 //    $('.zona2').toggle();
@@ -14,31 +12,22 @@
 //     $('.coquimbo').click(function (e) {
 //         e.preventDefault(); $('.zona1').show();
 //         $('.zona2, .zona3, .zona4').hide();
-//         if(screen.width < 576){
-//             location.href = "index.html#region";
-//           }
 //     });
 // });
+
 $('.valpo').click(function (e) {
     e.preventDefault(); $(".zona2").show();
     $(".zona1, .zona3, .zona4").hide();
-    if(screen.width < 576){
-        location.href = "index.html#region";
-      }
 });
+
 // $('.biobio').click(function (e) {
 //     e.preventDefault(); $('.zona3').show();
-//     $('.zona1, .zona2, .zona4').hide();
-//     if(screen.width < 576){
-//         location.href = "index.html#region";
-//       }
+//     $('.zona1, .zona2, .zona4').hide();   
 // });
+
 $('.lagos').click(function (e) {
     e.preventDefault(); $('.zona4').show();
     $('.zona1, .zona2, .zona3').hide();
-    if(screen.width < 576){
-        location.href = "index.html#region";
-      }
 });
 
 

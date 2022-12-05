@@ -1801,7 +1801,7 @@ i.fa.fa-whatsapp.my-float:before {
 
 @media (max-width: 576px) {
   .chapter-container {
-    width: 300px;
+    width: 230px;
   }
   .min_map_title {
     font-size: 1.2rem !important;
