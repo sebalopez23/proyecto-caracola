@@ -544,14 +544,10 @@ ion-icon {
 
 
  a.nav-link.phone, a.nav-link.email {
-   font-size: 0.8rem; 
-  font-weight: 500;
+  font-size: 0.8rem; 
+  font-weight: 600;
   /* padding-top: 5px; */
 } 
-
-button.toggler {
-  /* padding-top: 10px; */
-}
 
 @media (min-width: 992px) {
   .navbar {
@@ -623,7 +619,7 @@ button.toggler {
 .navbar-desctop .phone,
 .navbar-desctop .email {
   float: right;
-  font-family: "Karla", sans-serif;
+  font-family: "Prompt", sans-serif;
   position: relative;
   top: 0.3rem;
   margin-left: 2.5rem;
