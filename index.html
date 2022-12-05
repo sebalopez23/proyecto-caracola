@@ -16,6 +16,115 @@
     <link rel="stylesheet" href="css/mapa.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Proyecto caracola</title>
+
+    <style>
+        .audio-player {
+          position: relative;
+          width: 100%;
+          height: 0;
+          text-align: center;
+        }
+        .audio-player:focus .audio-player__cover,
+        .audio-player:hover .audio-player__cover,
+        .audio-player.is-playing .audio-player__cover {
+          opacity: 0.35;
+        }
+        .audio-player:focus .audio-player__title,
+        .audio-player:hover .audio-player__title,
+        .audio-player.is-playing .audio-player__title {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .audio-player:focus .audio-player__control-icon,
+        .audio-player:hover .audio-player__control-icon,
+        .audio-player.is-playing .audio-player__control-icon {
+          transform: scale(1.15);
+        }
+        .audio-player.is-playing .audio-player__cover {
+          opacity: 0;
+        }
+    
+        .audio-player.is-playing .audio-player__control-icon:before {
+          transform: translateY(0);
+        }
+        .audio-player.is-playing .audio-player__control-icon:after {
+          transform: translateY(50px);
+        }
+        .audio-player__cover {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: opacity 350ms;
+          will-change: opacity;
+        }
+        .audio-player__control {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          z-index: 20;
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
+        .audio-player__control:focus {
+          outline: none;
+        }
+        .audio-player__control-icon {
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          top: 8rem;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          overflow: hidden;
+          transition: all 250ms ease-out;
+          transform: scale(1);
+          will-change: transform;
+          background: rgba(0, 0, 0, 0.2);
+        }
+        .audio-player__control-icon::after,
+        .audio-player__control-icon::before {
+          transition: all 200ms;
+          will-change: transform;
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        .audio-player__control-icon::after {
+          left: 5px;
+          width: 0;
+          height: 0;
+          border-top: 16px solid transparent;
+          border-bottom: 16px solid transparent;
+          border-left: 20px solid #fff;
+          transform: translateY(0);
+        }
+        .audio-player__control-icon::before {
+          width: 15px;
+          height: 30px;
+          border-right: 6px solid #fff;
+          border-left: 6px solid #fff;
+          transform: translateY(-50px);
+        }
+        .audio-players {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+        </style>
+
 </head>
 
 <body>
@@ -312,7 +421,7 @@
                     <div class="container">
                         <div class="row map-container align-items-center justify-content-center">
 
-                            <div class="col-lg-4 col-xs-6 col-sm-6 text-center text-lg-left">
+                            <div class="col-5 text-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 869.136 3719.887" id="mapa">
                                     <defs>
                                         <style>
@@ -840,7 +949,7 @@
                             </div>
 
 
-                            <div class="col-lg-4 col-xs-6 col-sm-6" id="region">
+                            <div class="col-7 col-lg-5 text-center" id="region">
                                 <a href="#region"></a>
 
                                 <!-- Zona 1 -->
@@ -853,13 +962,13 @@
                                         </div>
 
                                         <div style="position: absolute; top: 20%; color: white; ">
-                                            <h6 class="min-subt  text-white">REGIÓN</h4>
-                                                <h2 class="regular-bold min_map_title light-text text-white">COQUIMBO
+                                            <h6 class="min-subt text-left text-white">REGIÓN</h4>
+                                                <h2 class="regular-bold min_map_title text-left light-text text-white">COQUIMBO
                                                 </h2>
                                                 <br>
-                                                <h6 class="min-subt text-white">SECTOR</h6>
+                                                <h6 class="min-subt text-white text-left">SECTOR</h6>
                                                 <a href="capitulo-1.html" class="map-link">
-                                                    <h3 class="min_map_subtitle">C. CHUNGUNGO</h3>
+                                                    <h3 class="min_map_subtitle text-left">C. CHUNGUNGO</h3>
                                                 </a>
                                         </div>
                                     </div>
@@ -875,14 +984,14 @@
                                         </div>
 
                                         <div style="position: absolute; top:20%; color: white;">
-                                            <h6 class="min-subt text-white">REGIÓN</h4>
-                                                <h2 class="regular-bold min_map_title light-text text-white">VALPARAÍSO</h2>
+                                            <h6 class="min-subt text-white text-left">REGIÓN</h4>
+                                                <h2 class="regular-bold min_map_title text-left light-text text-white">VALPARAÍSO</h2>
                                                 <br>
-                                                <h6 class="min-subt text-white">SECTOR</h6>
+                                                <h6 class="min-subt text-white text-left">SECTOR</h6>
                                                 <a href="capitulo-1.html" class="map-link">
-                                                    <h3 class="min_map_subtitle text-white">·ZAPALLAR</h3>
+                                                    <h3 class="min_map_subtitle text-left text-white">·ZAPALLAR</h3>
                                                 </a>
-                                                    <h3 class="min_map_subtitle text-white">·ALGARROBO</h3>
+                                                    <h3 class="min_map_subtitle text-left text-white">·ALGARROBO</h3>
                                                 
                                         </div>
                                     </div>
@@ -898,13 +1007,13 @@
                                         </div>
 
                                         <div style="position: absolute; top:20%; color: white; ">
-                                            <h6 class="min-subt text-white">REGIÓN</h4>
-                                                <h2 class="regular-bold min_map_title light-text text-white">BIO BIO
+                                            <h6 class="min-subt text-white text-left">REGIÓN</h4>
+                                                <h2 class="regular-bold min_map_title light-text text-left text-white">BIO BIO
                                                 </h2>
                                                 <br>
-                                                <h6 class="min-subt text-white">SECTOR</h6>
+                                                <h6 class="min-subt text-white text-left">SECTOR</h6>
                                                 <a href="capitulo-1.html" class="map-link">
-                                                    <h3 class="min_map_subtitle">MAULE</h3>
+                                                    <h3 class="min_map_subtitle text-left">MAULE</h3>
                                                 </a>
                                         </div>
                                     </div>
@@ -920,24 +1029,27 @@
                                         </div>
 
                                         <div style="position: absolute; top:20%; color: white; ">
-                                            <h6 class="min-subt text-white">REGIÓN</h4>
-                                                <h2 class="regular-bold min_map_title light-text text-white">LOS LAGOS</h2>
+                                            <h6 class="min-subt text-white text-left">REGIÓN</h4>
+                                                <h2 class="regular-bold min_map_title light-text text-left text-white">LOS LAGOS</h2>
                                                 <br>
-                                                <h6 class="min-subt text-white">SECTOR</h6>
-                                                    <h3 class="min_map_subtitle">HUALAIHUÉ</h3>
+                                                <h6 class="min-subt text-white text-left">SECTOR</h6>
+                                                    <h3 class="min_map_subtitle text-left">HUALAIHUÉ</h3>
                                                 <a href="capitulo-2.html" class="map-link">
-                                                    <h5 class="min_map_subtitle text-white">·C. EL MANZANO</h5>
+                                                    <h5 class="min_map_subtitle text-white text-left">·C. EL MANZANO</h5>
                                                   </a>
                                                 <a href="capitulo-3.html" class="map-link">
-                                                    <h5 class="min_map_subtitle text-white">·HORNOPIRÉN</h5>
+                                                    <h5 class="min_map_subtitle text-white text-left">·HORNOPIRÉN</h5>
                                                 </a>
                                                 
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
+
+                           <!-- End row mapas  -->
                         </div>
+                         <!-- End row mapas  -->
+
                     </div>
                 </div>
 

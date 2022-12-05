@@ -545,13 +545,10 @@ ion-icon {
 
  a.nav-link.phone, a.nav-link.email {
    font-size: 0.8rem; 
-  font-weight: 500;
+  font-weight: 600;
   /* padding-top: 5px; */
 } 
 
-button.toggler {
-  /* padding-top: 10px; */
-}
 
 @media (min-width: 992px) {
   .navbar {
@@ -1749,9 +1746,9 @@ i.fa.fa-whatsapp.my-float:before {
   font-size: 0.8rem;
 }
 
-.chapter-container {
-  padding: 20px;
-}
+/* .chapter-container {
+  padding-right: 10px;
+} */
 
 /* Nuestro proyecto */
 
@@ -1804,7 +1801,7 @@ i.fa.fa-whatsapp.my-float:before {
 
 @media (max-width: 576px) {
   .chapter-container {
-    width: 230px;
+    width: 300px;
   }
   .min_map_title {
     font-size: 1.2rem !important;
