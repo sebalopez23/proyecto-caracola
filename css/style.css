@@ -1475,11 +1475,18 @@ audio {
   font-size: 30px;
   box-shadow: 2px 2px 3px #4a4a4a;
   z-index: 100;
+  transition: all 0.3s ease-out !important;
 }
 
 .my-float {
   margin-top: 16px;
 }
+
+.float:hover {
+  background-color: #d16955;
+transition: all 0.3s ease-out;
+}
+
 
 /* NEW */
 
@@ -1570,6 +1577,12 @@ audio {
   border: none;
   font-size: 0.8rem;
 }
+
+.dropdown-item:hover {
+  background-color: #0a17577c;
+  color:#f27961;
+}
+
 .zona-text {
  font-size: 0.6rem !important;
 }
@@ -1664,8 +1677,13 @@ audio {
 .wsp-btn-text {
   font-size: 0.8rem;
 }
-.fa.fa-whatsapp {
+.fa-whatsapp-nav {
  font-size: 20px;
+ font-weight: 300 !important;
+}
+
+i.fa.fa-whatsapp.my-float:before {
+  color: rgb(255, 255, 255);
 }
 
 #mapa {
