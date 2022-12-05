@@ -118,7 +118,7 @@ h2,
   line-height: 1.2;
   color: #000;
   margin: 2rem 0;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
 }
 
 h3,
@@ -1787,15 +1787,6 @@ i.fa.fa-whatsapp.my-float:before {
   }
 }
 
-@media (max-width: 576px) {
-  .chapter-container {
-    width: 300px;
-  }
-  .zona-container {
-    justify-content: center;
-  }
-}
-
 @media (max-width: 767px) {
   #video {
     width: 95%;
@@ -1803,7 +1794,26 @@ i.fa.fa-whatsapp.my-float:before {
   .zona-container {
     justify-content: center;
   }
+  .min_map_title {
+    font-size: 1.5rem !important;
+  }
+  .min_map_subtitle {
+    font-size: 0.7rem !important;
+  }
 }
+
+@media (max-width: 576px) {
+  .chapter-container {
+    width: 230px;
+  }
+  .min_map_title {
+    font-size: 1.2rem !important;
+  }
+  .min_map_subtitle {
+    font-size: 0.6rem !important;
+  }
+}
+
 
 /* Queries footer */
 @media (max-width: 557px) {
@@ -1897,6 +1907,12 @@ i.fa.fa-whatsapp.my-float:before {
     width: 20px;
     height: 20px;
   }
+  #mapa {
+    height: 75vh !important;
+    width: 70% !important;
+  }
+
+
 }
 
 /* Queries Nuestro proyecto */
