@@ -28,7 +28,7 @@
             scrollingSpeed: 280,
             navigation:false,
             menu: '.navbar-nav',
-            anchors: ['home', 'introduccion', 'testimonios', 'informacion', 'indicaciones', 'mapa', 'footer'],
+            anchors: ['home', 'introduccion', 'testimonios', 'informacion', 'indicaciones', 'mapas', 'footer'],
 
             afterRender: function(anchorLink, index){ 
               NavbarColor();
