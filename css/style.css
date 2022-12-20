@@ -198,7 +198,8 @@ h6 a:hover,
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
   font-weight: 300;
 }
 
@@ -453,21 +454,25 @@ ion-icon {
 }
 
 @-webkit-keyframes sk-bounce {
+
   0%,
   100% {
     -webkit-transform: scale(0);
   }
+
   50% {
     -webkit-transform: scale(1);
   }
 }
 
 @keyframes sk-bounce {
+
   0%,
   100% {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
+
   50% {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -543,11 +548,12 @@ ion-icon {
 }
 
 
- a.nav-link.phone, a.nav-link.email {
-   font-size: 0.8rem; 
+a.nav-link.phone,
+a.nav-link.email {
+  font-size: 0.8rem;
   font-weight: 600;
   /* padding-top: 5px; */
-} 
+}
 
 
 @media (min-width: 992px) {
@@ -608,6 +614,7 @@ ion-icon {
     position: static;
     float: left;
   }
+
   .navbar .container {
     width: auto;
   }
@@ -718,19 +725,19 @@ ion-icon {
   text-decoration: none;
 }
 
-.navbar-nav-desctop > li {
+.navbar-nav-desctop>li {
   position: relative;
   float: left;
   margin-right: 2.1rem;
 }
 
-.navbar-nav-desctop > li > a {
+.navbar-nav-desctop>li>a {
   display: flex;
   align-items: center;
 }
 
-.navbar-nav-desctop > li > .active,
-.navbar-nav-desctop > li:hover > a {
+.navbar-nav-desctop>li>.active,
+.navbar-nav-desctop>li:hover>a {
   color: #767676;
 }
 
@@ -934,9 +941,9 @@ ion-icon {
   color: #fff;
 }
 
-.navbar-white:not(.fixed) .navbar-nav-desctop > .active > a,
-.navbar-white:not(.fixed) .navbar-nav-desctop > li > .active,
-.navbar-white:not(.fixed) .navbar-nav-desctop > li:hover > a {
+.navbar-white:not(.fixed) .navbar-nav-desctop>.active>a,
+.navbar-white:not(.fixed) .navbar-nav-desctop>li>.active,
+.navbar-white:not(.fixed) .navbar-nav-desctop>li:hover>a {
   color: #23a592;
 }
 
@@ -979,7 +986,7 @@ ion-icon {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-h1 + .line {
+h1+.line {
   margin-top: 15vh;
   width: 25%;
   border-top: 3px solid #f27961;
@@ -1086,11 +1093,11 @@ h1 + .line {
   height: 30px;
 }
 
-.progress-nav li.active ~ li:before {
+.progress-nav li.active~li:before {
   background-color: #101010;
 }
 
-.progress-nav-white li.active ~ li:before {
+.progress-nav-white li.active~li:before {
   background-color: #fff;
 }
 
@@ -1180,29 +1187,33 @@ h1 + .line {
   top: 0;
   margin-top: -7.6rem;
   font-size: 6rem;
-  color: #f27961;
+  color: #ff8269;
 }
+
 
 @media (max-width: 800px) {
   .owl-nav {
     margin-top: 2rem;
     margin-right: 16rem;
   }
+
   audio {
     width: 100%;
   }
+
   h2,
   .h2 {
     font-size: 2rem;
   }
 }
+
 .owl-prev {
   margin-right: 0.6rem;
 }
 
 .owl-next,
 .owl-prev {
-  opacity: 0.45;
+  opacity: 0.80;
   transition: all 0.3s;
 }
 
@@ -1353,6 +1364,7 @@ h1 + .line {
 .row-project-box {
   margin-top: -30px;
 }
+
 .container-column {
   padding-left: 0px;
   padding-right: 0px;
@@ -1409,6 +1421,7 @@ h1 + .line {
   .project-box {
     padding-bottom: 75%;
   }
+
   .project-category {
     position: absolute;
     bottom: 1.2rem;
@@ -1481,7 +1494,7 @@ audio {
 
 .float:hover {
   background-color: #d16955;
-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 
@@ -1492,12 +1505,14 @@ transition: all 0.3s ease-out;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 15px;
 }
+
 .circle-wrapper {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
+
 .circle-wrapper:before,
 .circle-wrapper:after {
   content: "";
@@ -1507,15 +1522,18 @@ transition: all 0.3s ease-out;
   height: 2px;
   width: 50%;
 }
+
 .circle-wrapper:before {
   left: 0;
 }
+
 .circle-wrapper:after {
   right: 0;
 }
+
 .circle {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border: 2px solid #f27961;
   border-radius: 50%;
   background-color: white;
@@ -1572,26 +1590,28 @@ transition: all 0.3s ease-out;
 .dropdown-item {
   background-color: #4a60cf;
   border: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .dropdown-item:hover {
   background-color: #0a17577c;
-  color:#f27961;
+  color: #f27961;
 }
 
 .zona-text {
- font-size: 0.6rem !important;
+  font-size: 0.7rem !important;
 }
-.drop1-text{
+
+.drop1-text {
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
- }
+}
 
 .dropdown-item {
   background-color: #4a60cf;
   color: #ffffff;
 }
+
 .dropdown-item:hover {
   background-color: #4356b9 !important;
   color: #f27961 !important;
@@ -1602,13 +1622,13 @@ transition: all 0.3s ease-out;
 }
 
 .spotify-icon {
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.2s;
+  /* Animation */
 }
 
 .spotify-icon:hover {
-  transform: scale(
-    1.2
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 /* Home */
@@ -1627,10 +1647,12 @@ transition: all 0.3s ease-out;
 /* PRUEBA */
 
 @keyframes fadeOutDown {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(100px);
   }
@@ -1640,10 +1662,10 @@ transition: all 0.3s ease-out;
   font-weight: 300;
 }
 
- .intro-home {
+.intro-home {
   font-weight: 300;
   font-size: 1.2rem;
-} 
+}
 
 .intro-project {
   font-weight: 300;
@@ -1653,7 +1675,7 @@ transition: all 0.3s ease-out;
 .cuñas-home {
   font-weight: 300;
   font-size: 1.1rem;
-} 
+}
 
 .nombre-personaje {
   font-size: 1rem;
@@ -1674,9 +1696,10 @@ transition: all 0.3s ease-out;
 .wsp-btn-text {
   font-size: 0.8rem;
 }
+
 .fa-whatsapp-nav {
- font-size: 20px;
- font-weight: 300 !important;
+  font-size: 20px;
+  font-weight: 300 !important;
 }
 
 i.fa.fa-whatsapp.my-float:before {
@@ -1704,6 +1727,7 @@ i.fa.fa-whatsapp.my-float:before {
   font-weight: 300 !important;
   transition: all 0.5s !important;
 }
+
 .menu-link:hover {
   color: #fc8870 !important;
   transition: all 0.5s !important;
@@ -1721,6 +1745,7 @@ i.fa.fa-whatsapp.my-float:before {
   color: white;
   transition: all 0.5s !important;
 }
+
 .min_map_subtitle:hover {
   color: #fc8870 !important;
   transition: all 0.5s !important;
@@ -1738,8 +1763,21 @@ i.fa.fa-whatsapp.my-float:before {
 
 /* Capitulos */
 
+.intro-cap-text {
+  font-size: 1.1rem;
+}
+
+.nombre-personaje2 {
+  font-size: 0.9rem;
+  font-weight: 100 !important;
+}
+
 .cap-title {
   letter-spacing: 1rem;
+}
+
+.rep-subtitle {
+  letter-spacing: 0.1rem;
 }
 
 .zona-p {
@@ -1788,12 +1826,15 @@ i.fa.fa-whatsapp.my-float:before {
   #video {
     width: 95%;
   }
+
   .zona-container {
     justify-content: center;
   }
+
   .min_map_title {
     font-size: 1.5rem !important;
   }
+
   .min_map_subtitle {
     font-size: 0.7rem !important;
   }
@@ -1803,9 +1844,11 @@ i.fa.fa-whatsapp.my-float:before {
   .chapter-container {
     width: 230px;
   }
+
   .min_map_title {
     font-size: 1.2rem !important;
   }
+
   .min_map_subtitle {
     font-size: 0.6rem !important;
   }
@@ -1817,6 +1860,7 @@ i.fa.fa-whatsapp.my-float:before {
   .container {
     padding-left: 5px !important;
   }
+
   .row-footer {
     display: inline-block !important;
   }
@@ -1835,6 +1879,7 @@ i.fa.fa-whatsapp.my-float:before {
     font-size: 4rem !important;
     letter-spacing: 1rem !important;
   }
+
   .p-title {
     line-height: 2.1rem !important;
   }
@@ -1844,45 +1889,69 @@ i.fa.fa-whatsapp.my-float:before {
   .cap-title {
     font-size: 3.4rem !important;
   }
+
   .p-intro-title {
     top: 16px !important;
   }
+
   .cap-sect-title {
     font-size: 2.8rem !important;
     /* letter-spacing: 8px !important;
         line-height: 45px */
   }
+
   .p-title {
     font-size: 2rem !important;
     line-height: auto !important;
     top: 80px !important;
   }
+
   .p-subtitle {
     font-size: 1rem !important;
   }
+
   .p-width {
     width: 90% !important;
   }
+
   .cap2-title {
     font-size: 3rem !important;
   }
 }
 
 @media (max-width: 575px) {
+  .container {
+    width: 90%;
+  } 
+  .cap-title {
+    font-size: 3rem !important;
+    letter-spacing: 0.7rem !important;
+  }
   .s-zonas-text {
     padding-left: 12px;
+    padding-top: 3rem;
+    font-size: 0.7rem;
   }
-}
-
-@media (max-width: 480px) {
-  .cap-title {
-    font-size: 3.2rem !important;
-    letter-spacing: 0.7rem !important;
+  .intro-cap-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .rep-subtitle {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .nombre-personaje {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .master-wrapper {
+    padding-top: 1rem !important;
   }
 
   audio {
     width: 100% !important;
   }
+
   .cap-sect-title {
     font-size: 1.9rem !important;
     line-height: 34px;
@@ -1891,6 +1960,7 @@ i.fa.fa-whatsapp.my-float:before {
   .cap2-title {
     font-size: 1.6rem !important;
   }
+
   .p-width {
     width: 90% !important;
   }
@@ -1900,10 +1970,12 @@ i.fa.fa-whatsapp.my-float:before {
   .owl-carousel .owl-item img {
     height: 250px;
   }
-  .circle.info-up  {
+
+  .circle.info-up {
     width: 20px;
     height: 20px;
   }
+
   #mapa {
     height: 75vh !important;
     width: 70% !important;
@@ -1919,7 +1991,7 @@ i.fa.fa-whatsapp.my-float:before {
     font-size: 2rem;
     letter-spacing: 0.3rem;
   }
-  
+
   .titulo-proyecto {
     font-size: 2.4rem;
     font-weight: 500 !important;
@@ -1935,6 +2007,3 @@ i.fa.fa-whatsapp.my-float:before {
     padding-top: 20px;
   }
 }
-
-
-
