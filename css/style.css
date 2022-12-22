@@ -106,7 +106,7 @@ h1,
   font-weight: 700;
   line-height: 1;
   color: #000;
-  letter-spacing: 1rem;
+  letter-spacing: 0.6rem;
 }
 
 h2,
@@ -118,7 +118,7 @@ h2,
   line-height: 1.2;
   color: #000;
   margin: 2rem 0;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.4rem;
 }
 
 h3,
@@ -151,7 +151,7 @@ h5,
   line-height: 1.2;
   color: #000;
   margin: 1.2rem 0;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
 }
 
 h6,
@@ -1603,8 +1603,10 @@ audio {
 }
 
 .drop1-text {
-  font-size: 0.8rem;
-  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600px !important;
+  color: #f27961;
 }
 
 .dropdown-item {
@@ -1662,9 +1664,20 @@ audio {
   font-weight: 300;
 }
 
+.title {
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  padding-bottom: 16px;
+}
+
 .intro-home {
   font-weight: 300;
   font-size: 1.2rem;
+}
+
+.intro-wsp {
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 .intro-project {
@@ -1672,14 +1685,15 @@ audio {
   font-size: 1.4rem;
 }
 
-.cuñas-home {
+.cunas-home {
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 .nombre-personaje {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 200;
   font-style: italic;
 }
 
@@ -1763,8 +1777,9 @@ i.fa.fa-whatsapp.my-float:before {
 
 /* Capitulos */
 
-.intro-cap-text {
-  font-size: 1.1rem;
+.s-zonas-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
 }
 
 .nombre-personaje2 {
@@ -1773,20 +1788,31 @@ i.fa.fa-whatsapp.my-float:before {
 }
 
 .cap-title {
+  font-size: 4.7rem;
   letter-spacing: 1rem;
 }
 
-.rep-subtitle {
-  letter-spacing: 0.1rem;
+.intro-cap-text {
+  font-size: 1.1rem;
 }
 
-.zona-p {
-  font-size: 0.8rem;
-}
+.rep-title {
+  font-size: 2.75rem;
+} 
+
+.rep-subtitle {
+  font-size: 1rem;
+} 
+
+.cuna-rep-title {
+  font-size: 1.8rem;
+} 
 
 /* .chapter-container {
   padding-right: 10px;
 } */
+
+
 
 /* Nuestro proyecto */
 
@@ -1811,6 +1837,36 @@ i.fa.fa-whatsapp.my-float:before {
 /* Media Queries */
 
 /* Queries Home */
+
+
+@media (min-width: 1500px) {
+  .home-video {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .title {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 20px;
+  }
+  .intro-home {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+  .cunas-home {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .nombre-personaje {
+    font-size: 0.7rem;
+    font-weight: 200;
+    line-height: 0.8rem;
+  }
+}
+
+
 @media screen and (max-width: 1150px) {
   .min_map_title {
     font-size: 2rem !important;
@@ -1823,7 +1879,7 @@ i.fa.fa-whatsapp.my-float:before {
 }
 
 @media (max-width: 767px) {
-  #video {
+  .home-video {
     width: 95%;
   }
 
@@ -1874,14 +1930,59 @@ i.fa.fa-whatsapp.my-float:before {
 
 /* Queries Capítulo */
 
+/* @media screen and (max-width: 1400px) {
+.rep-title {
+ font-size: 1.8rem;
+ padding-top:38px;
+  } 
+.rep-subtitle {
+    font-size: 1rem;
+  } 
+.cuna-rep-title {
+    font-size: 1.4rem;
+  }  */
+
+
+@media (min-width: 1020px) and (max-width: 1400px) {
+  .cap-video {
+    width: 70% !important;
+    height: auto !important;
+  } 
+  .cap-title {
+    font-size: 3.2rem;
+  }
+  .rep-title {
+    font-size: 1.8rem;
+    padding-top:38px;
+  } 
+  .rep-subtitle {
+    font-size: 1rem;
+  } 
+  .intro-cap-text {
+    font-size: 0.9rem;
+  }
+  .cuna-rep-title {
+    font-size: 1.4rem;
+  } 
+  .s-zonas-text {
+    margin-top: 50px;
+  }
+  .mapa-lineal-cap {
+    width: 20px !important;
+  }
+  .mapa-div-cap {
+    width: 20px !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1150px) {
   .cap-title {
-    font-size: 4rem !important;
-    letter-spacing: 1rem !important;
+    font-size: 4rem;
+    letter-spacing: 1rem;
   }
 
   .p-title {
-    line-height: 2.1rem !important;
+    line-height: 2.1rem ;
   }
 }
 
