@@ -1787,6 +1787,12 @@ i.fa.fa-whatsapp.my-float:before {
   font-weight: 100 !important;
 }
 
+.nombre-personaje3 {
+  font-size: 0.9rem;
+  font-weight: 100 !important;
+  font-style: italic;
+}
+
 .cap-title {
   font-size: 4.7rem;
   letter-spacing: 1rem;
@@ -1805,7 +1811,12 @@ i.fa.fa-whatsapp.my-float:before {
 } 
 
 .cuna-rep-title {
-  font-size: 1.8rem;
+  font-size: 1.rem;
+} 
+
+.cunas-rep { 
+  font-size: 1rem;
+  font-style: italic;
 } 
 
 .w-70 {
@@ -1968,6 +1979,12 @@ i.fa.fa-whatsapp.my-float:before {
   }
   .cuna-rep-title {
     font-size: 1.4rem;
+  } 
+  .cunas-rep { 
+    font-size: 0.9rem;
+  } 
+  .nombre-personaje3 { 
+    font-size: 0.8rem;
   } 
   /* .s-zonas-text {
     margin-top: 50px;
