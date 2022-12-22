@@ -1775,6 +1775,7 @@ i.fa.fa-whatsapp.my-float:before {
   font-size: 1.2rem;
 }
 
+
 /* Capitulos */
 
 .s-zonas-text {
@@ -1791,6 +1792,7 @@ i.fa.fa-whatsapp.my-float:before {
   font-size: 0.9rem;
   font-weight: 100 !important;
   font-style: italic;
+  line-height: 1.2rem;
 }
 
 .cap-title {
@@ -1807,7 +1809,8 @@ i.fa.fa-whatsapp.my-float:before {
 } 
 
 .rep-subtitle {
-  font-size: 1rem;
+  font-size: 1.6rem;
+  width: 90%;
 } 
 
 .cuna-rep-title {
@@ -1817,6 +1820,7 @@ i.fa.fa-whatsapp.my-float:before {
 .cunas-rep { 
   font-size: 1rem;
   font-style: italic;
+  line-height: 1.2rem;;
 } 
 
 .w-70 {
@@ -1859,7 +1863,7 @@ i.fa.fa-whatsapp.my-float:before {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1401px) {
   .title {
     font-size: 1.8rem;
     letter-spacing: 0.3rem;
@@ -1878,6 +1882,10 @@ i.fa.fa-whatsapp.my-float:before {
     font-weight: 200;
     line-height: 0.8rem;
   }
+  #video.home-video {
+    width: 55% !important;
+    height: auto !important;
+  } 
 }
 
 
@@ -1942,25 +1950,10 @@ i.fa.fa-whatsapp.my-float:before {
   }
 }
 
-/* Queries Capítulo */
+/* Queries Capitulo */
 
-/* @media screen and (max-width: 1400px) {
-.rep-title {
- font-size: 1.8rem;
- padding-top:38px;
-  } 
-.rep-subtitle {
-    font-size: 1rem;
-  } 
-.cuna-rep-title {
-    font-size: 1.4rem;
-  }  */
-
-  /* @media (min-width: 1020px) and  */
-  
-  
 @media (min-width: 1020px) and (max-width: 1440px) {
-  #video {
+  #video.cap-video {
     width: 70% !important;
     height: auto !important;
   } 
@@ -1968,11 +1961,11 @@ i.fa.fa-whatsapp.my-float:before {
     font-size: 3.2rem;
   }
   .rep-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding-top:38px;
   } 
   .rep-subtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
   } 
   .intro-cap-text {
     font-size: 0.9rem;
@@ -1981,11 +1974,14 @@ i.fa.fa-whatsapp.my-float:before {
     font-size: 1.4rem;
   } 
   .cunas-rep { 
-    font-size: 0.9rem;
+    font-size: 01rem;
   } 
   .nombre-personaje3 { 
     font-size: 0.8rem;
   } 
+  .texto-suenos {
+    width: 70%;
+  }
   /* .s-zonas-text {
     margin-top: 50px;
   } */

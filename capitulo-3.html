@@ -157,12 +157,12 @@
               </div>
             </div>
 
-            <div class="row align-items-center justify-content-around">
+            <div class="row align-items-center justify-content-center">
               <div class="col-6 col-md-4 col-lg-4">
                 <h1 class="cap-title text-white text-left">ACIDIFICACIÓN</h1>
               </div>
-              <div class="mapa-div-cap col-6 col-md-4 col-lg-4 text-right">
-                <img src="img/capitulo-2/Los_Lagos.svg" width="66%" class="mapa-lineal-cap img-fluid text-right" />
+              <div class="mapa-div-cap col-6 col-md-4 col-lg-4 text-center">
+                <img src="img/capitulo-2/Los_Lagos.svg" width="66%" class="mapa-lineal-cap img-fluid text-center" />
               </div>
             
               <p class="intro-cap-text white-text text-center">En este capítulo aprenderemos qué es la acidificación de los océanos, cómo afecta a las distintas especies marinas comerciales y cómo los pescadores artesanales, el sector público y diversos científicos, crean conocimiento para adaptarse a este fenómeno.</p>
@@ -254,7 +254,7 @@
                     " Un refugio marino es una área de no extracción ubicada dentro de las áreas de manejo">
                 </p>
                 <div class="text-left">
-                  <audio preload="auto" controls>
+                  <audio preload="auto" id="audio" class="audio my-1" controls onplay="clickEvent()">
                     <source src="img/capitulo-3/audios/0_E03_Intro.mp3" />
                   </audio>
                 </div>
@@ -274,7 +274,6 @@
               <h2 class="text-white rep-title mb-2">PROBLEMÁTICAS</h2>
               <p>
                 "Muchas de las especies que habitan en el mar no tienen la capacidad de responder de forma tan rápida a los cambios que están ocurriendo”
-
               </p>
             </div>
             <div class="">
@@ -295,7 +294,7 @@
                         “Nos hace falta una parte técnica en donde nos digan mira sabes qué esto es lo que significa en realidad”
                       </p>
                       <div class="text-left">
-                        <audio preload="auto" controls>
+                        <audio preload="auto" id="audio" class="audio my-1" controls onplay="clickEvent()">
                           <source src="img/capitulo-3/audios/01_E03_Problemas_comunidad.mp3" />
                         </audio>
                       </div>
@@ -318,7 +317,7 @@
                         “Muchas de las especies que habitan en el mar no tienen la capacidad de responder de forma tan rápida a los cambios que están ocurriendo”
                       </p>
                       <div class="text-left">
-                        <audio preload="auto" controls>
+                        <audio preload="auto" id="audio" class="audio my-1" controls onplay="clickEvent()">
                           <source src="img/capitulo-3/audios/02_E03_Problemas_Investigadores.mp3" />
                         </audio>
                       </div>
@@ -363,7 +362,7 @@
                         “Hacer una mesa de trabajo comunal y en esta mesa comunal tratar esto”
                       </p>
                       <div class="text-left">
-                        <audio preload="auto" controls>
+                        <audio preload="auto" id="audio" class="audio my-1" controls onplay="clickEvent()">
                           <source src="img/capitulo-3/audios/03_E03_Trabajo_en_conjunto_comunidad.mp3" />
                         </audio>
                       </div>
@@ -388,7 +387,7 @@
                         “Hay bastante que podemos aprender del conocimiento que tienen las comunidades respecto del ambiente y de los organismos que ellos están cultivando” 
                       </p>
                       <div class="text-left">
-                        <audio preload="auto" controls>
+                        <audio preload="auto" id="audio" class="audio my-1" controls onplay="clickEvent()">
                           <source src="img/capitulo-3/audios/05_E03_Trabajo_en_conjunto_investigador.mp3" />
                         </audio>
                       </div>
@@ -429,7 +428,7 @@
                         “Si la actividad está perjudicando al medio ambiente uno debería decir oye para un poco acá porque estamos contaminando demasiado”
                       </p>
                       <div class="text-left">
-                        <audio preload="auto" controls>
+                        <audio preload="auto" id="audio" class="audio my-1" controls onplay="clickEvent()">
                           <source src="img/capitulo-1/audios/08_VISION_A_FUTURO_comunidad.mp3" />
                         </audio>
                       </div>
@@ -451,7 +450,7 @@
                         “El tema es tratar de controlar la cantidad de dióxido de carbono que liberamos a la atmósfera”
                       </p>
                       <div class="text-left">
-                        <audio preload="auto" controls>
+                        <audio preload="auto" id="audio" class="audio my-1" controls onplay="clickEvent()">
                           <source src="img/capitulo-1/audios/09_VISION_A_FUTURO_investigadores.mp3" />
                         </audio>
                       </div>
@@ -491,7 +490,7 @@
                   “Por ejemplo lo que es la recolección de orilla, bien poco lo toman en cuenta”
                 </p>
                 <div class="text-left">
-                  <audio preload="auto" controls>
+                  <audio preload="auto" id="audio" class="audio my-1" controls onplay="clickEvent()">
                     <source src="img/capitulo-3/audios/07_E03_Vision_compartida.mp3" />
                   </audio>
                 </div>
@@ -507,10 +506,8 @@
         <div class="scroll-wrap">
           <div class="container">
             <h2 class="text-white rep-title mb-1">SUEÑOS FUTUROS</h2>
-            <!-- <p>
-              “Cultivar el mar va a ser yo creo que va a ser la actividad de aquí a 30 40 años más”
-            </p> -->
-            <div class="mt-4 text-center">
+            <p class="intro-home w-70">“Cultivar el mar va a ser yo creo que va a ser la actividad de aquí a 30 40 años más”</p>
+            <div class="mt-4 text-left">
               <video width="100%" height="100%" id="video" class="cap-video" preload="metadata"
                 poster="https://sebalopez23.github.io/proyecto-secos-github/assets/img/capitulo-1/animacion_cap1.png"
                 controls>
