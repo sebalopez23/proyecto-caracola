@@ -28,7 +28,7 @@
               scrollingSpeed: 280,
               navigation:false,
               menu: '.navbar-nav',
-              anchors: ['home', 'introduccion', 'problematicas', 'trabajo-en-conjunto', 'vision-a-futuro', 'vision-compartida', 'suenos-futuros'],
+              anchors: ['home', 'introduccion', 'timeline', 'problematicas', 'trabajo-en-conjunto', 'vision-a-futuro', 'vision-compartida', 'suenos-futuros'],
               afterRender: function(anchorLink, index){ 
                 NavbarColor();
               },

@@ -1640,11 +1640,63 @@ audio {
   letter-spacing: 0.1rem;
 }
 
+.pin {
+  position: absolute;
+  top: 160px;
+  left: 80px;
+  }
+
+.pin2 {
+  position: absolute;
+  top: 320px;
+  left: 220px;
+  }
+
+  @media screen and (max-width: 1399px) {
+    .pin {
+      top: 130px;
+      left: 70px;
+  }
+  .pin2 {
+    top: 320px;
+    left: 220px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .pin {
+    top: 10px;
+    left: 70px;
+}
+.pin2 {
+  position: absolute;
+  top: 220px;
+  left: 150px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pin {
+    top: 50px;
+    left: 30px;
+}
+.pin2 {
+  position: absolute;
+  top: 150px;
+  left: 90px;
+  }
+}
+
 .scroll-wrap {
   margin: 0 auto !important;
   padding: 0 auto !important;
 }
 
+.cuna-img {
+  width: 100px;
+  border-radius: 200px;
+  margin-bottom: 10px;
+}
 
 /* PRUEBA */
 
