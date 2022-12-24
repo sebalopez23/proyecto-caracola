@@ -28,7 +28,7 @@
               scrollingSpeed: 280,
               navigation:false,
               menu: '.navbar-nav',
-              anchors: ['home', 'introduccion', 'timeline', 'problematicas', 'trabajo-en-conjunto', 'vision-a-futuro', 'vision-compartida', 'suenos-futuros'],
+              anchors: ['home', 'timeline', 'introduccion', 'problematica', 'trabajo-en-conjunto', 'vision-a-futuro', 'vision-compartida', 'suenos-futuros'],
               afterRender: function(anchorLink, index){ 
                 NavbarColor();
               },
@@ -44,9 +44,7 @@
     
   /* Master wrapper*/
   
-      
-  
-  
+    
           function NavbarColor(){
            if ($('.pp-section.active').hasClass('navbar-is-white')){
                   $('.navbar-desctop').addClass('navbar-white');
