@@ -370,10 +370,19 @@ label.error {
   border-color: #fff;
 }
 
-back-to-top {
-  color: #fff;
-  border-color: #fff;
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  --bs-btn-border-radius: none;
+  z-index: 90;
+  background-color: #FFFCF1;
 }
+/* .back-to-top:hover {
+  background-color: rgba(201, 96, 48, 0.199) !important;
+  color: rgb(201, 97, 48);
+} */
 
 /* 1.5 Icons */
 
@@ -1856,6 +1865,7 @@ i.fa.fa-whatsapp.my-float:before {
 }
 
 
+
 /* Capitulos */
 
 .s-zonas-text {
@@ -2004,6 +2014,15 @@ i.fa.fa-whatsapp.my-float:before {
   .min_map_subtitle {
     font-size: 0.6rem !important;
   }
+/* 
+  .back-to-top {
+    background-color: transparent !important;
+    color: #fff;
+    padding: 10px 5px 10px 5px;
+    border-color: #fff;
+    bottom: 80px;
+    right: 0;
+  } */
 }
 
 
@@ -2012,7 +2031,9 @@ i.fa.fa-whatsapp.my-float:before {
   .container {
     padding-left: 5px !important;
   }
-
+  .logos-footer {
+    width: 70px;
+  }
   .row-footer {
     display: inline-block !important;
   }
