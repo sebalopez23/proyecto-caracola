@@ -71,6 +71,11 @@ body {
   overflow-y: hidden;
 }
 
+.bold {
+ font-weight: 700;
+}
+
+
 ::-webkit-scrollbar {
   width: 0px;
   height: 8px;
@@ -1190,7 +1195,6 @@ h1+.line {
   color: #ff8269;
 }
 
-
 @media (max-width: 800px) {
   .owl-nav {
     margin-top: 2rem;
@@ -1500,6 +1504,23 @@ audio {
 
 /* NEW */
 
+hr {
+  background-color: rgba(255, 255, 255, 0.247);
+  width: 100%;
+}
+
+.ir-arriba {
+  /* display: none; */
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  bottom: 110px;
+  right: 50px;
+  z-index: 2;
+}
+
 .master-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1701,12 +1722,10 @@ audio {
 /* PRUEBA */
 
 @keyframes fadeOutDown {
-
   0%,
   100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(100px);
   }
@@ -1827,6 +1846,10 @@ i.fa.fa-whatsapp.my-float:before {
   font-size: 1.2rem;
 }
 
+.logos-colab {
+ width: 80px;
+}
+
 
 /* Capitulos */
 
@@ -1836,28 +1859,21 @@ i.fa.fa-whatsapp.my-float:before {
 }
 
 .nombre-personaje2 {
-  font-size: 0.9rem;
-  font-weight: 100 !important;
-}
-
-.nombre-personaje3 {
-  font-size: 0.9rem;
-  font-weight: 100 !important;
-  font-style: italic;
-  line-height: 1.2rem;
+  font-size: 1rem;
 }
 
 .cap-title {
-  font-size: 4.7rem;
-  letter-spacing: 1rem;
+  font-size: 3.7rem;
+  letter-spacing: 0.6rem;
 }
 
 .intro-cap-text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .rep-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
 } 
 
 .rep-subtitle {
@@ -1866,7 +1882,7 @@ i.fa.fa-whatsapp.my-float:before {
 } 
 
 .cuna-rep-title {
-  font-size: 1.rem;
+  font-size: 1.4rem;
 } 
 
 .cunas-rep { 
@@ -1929,6 +1945,7 @@ i.fa.fa-whatsapp.my-float:before {
     font-size: 0.8rem;
     line-height: 1rem;
   }
+
   .nombre-personaje {
     font-size: 0.7rem;
     font-weight: 200;
@@ -2045,7 +2062,6 @@ i.fa.fa-whatsapp.my-float:before {
   } */
 }
 
-
 @media (min-width: 768px) and (max-width: 1150px) {
   .cap-title {
     font-size: 4rem;
@@ -2061,31 +2077,25 @@ i.fa.fa-whatsapp.my-float:before {
   .cap-title {
     font-size: 3.4rem !important;
   }
-
   .p-intro-title {
     top: 16px !important;
   }
-
   .cap-sect-title {
     font-size: 2.8rem !important;
     /* letter-spacing: 8px !important;
         line-height: 45px */
   }
-
   .p-title {
     font-size: 2rem !important;
     line-height: auto !important;
     top: 80px !important;
   }
-
   .p-subtitle {
     font-size: 1rem !important;
   }
-
   .p-width {
     width: 90% !important;
   }
-
   .cap2-title {
     font-size: 3rem !important;
   }
@@ -2096,8 +2106,13 @@ i.fa.fa-whatsapp.my-float:before {
     width: 90%;
   } 
   .cap-title {
-    font-size: 3rem !important;
+    font-size: 2.7rem !important;
     letter-spacing: 0.7rem !important;
+  }
+  .rep-title {
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.2rem;
   }
   .s-zonas-text {
     padding-left: 12px;
@@ -2116,33 +2131,38 @@ i.fa.fa-whatsapp.my-float:before {
     font-size: 0.9rem;
     line-height: 1.4rem;
   }
+  .nombre-personaje2 {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
   .master-wrapper {
     padding-top: 1rem !important;
   }
-
   audio {
     width: 100% !important;
   }
-
   .cap-sect-title {
     font-size: 1.9rem !important;
     line-height: 34px;
   }
-
   .cap2-title {
     font-size: 1.6rem !important;
   }
-
   .p-width {
+    width: 90% !important;
+  }
+  .owl-carousel .owl-item img {
+    height: 200px !important;
+  }
+  .owl-nav {
+    font-size: 3rem;
+  }
+  .cunas-rep {
     width: 90% !important;
   }
 }
 
 @media (max-width: 767px) {
-  .owl-carousel .owl-item img {
-    height: 250px;
-  }
-
   .circle.info-up {
     width: 20px;
     height: 20px;

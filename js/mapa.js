@@ -29,10 +29,3 @@ $('.lagos').click(function (e) {
     e.preventDefault(); $('.zona4').show();
     $('.zona1, .zona2, .zona3').hide();
 });
-
-
-
-
-
-
-
