@@ -1730,7 +1730,7 @@ hr {
 .cuna-img {
   width: 100px;
   border-radius: 200px;
-  margin-bottom: 10px;
+  margin: 4px 0px 4px 0px;
 }
 
 /* PRUEBA */
@@ -1873,8 +1873,11 @@ i.fa.fa-whatsapp.my-float:before {
   letter-spacing: 0.1rem;
 }
 
-.nombre-personaje2 {
+.nombre-personaje-2 {
   font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4rem;;
+
 }
 
 .cap-title {
@@ -1884,6 +1887,7 @@ i.fa.fa-whatsapp.my-float:before {
 
 .intro-cap-text {
   font-size: 1.2rem;
+  width: 80%;
 }
 
 .rep-title {
@@ -1905,6 +1909,11 @@ i.fa.fa-whatsapp.my-float:before {
   font-style: italic;
   line-height: 1.2rem;;
 } 
+
+.intro-v {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 
 .w-70 {
   width: 70%;
@@ -1939,7 +1948,6 @@ i.fa.fa-whatsapp.my-float:before {
 
 /* Queries Home */
 
-
 @media (min-width: 1500px) {
   .home-video {
     width: 70%;
@@ -1954,26 +1962,29 @@ i.fa.fa-whatsapp.my-float:before {
   }
   .intro-home {
     font-size: 1.1rem;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
   }
   .cunas-home {
     font-size: 0.8rem;
     line-height: 1rem;
   }
-
   .nombre-personaje {
     font-size: 0.7rem;
     font-weight: 200;
     line-height: 0.8rem;
   }
-  #video.home-video {
+  /* #video.home-video {
     width: 55% !important;
     height: auto !important;
-  } 
+  }  */
 }
 
 
 @media screen and (max-width: 1150px) {
+  .intro-home {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
   .min_map_title {
     font-size: 2rem !important;
     letter-spacing: 0.6rem !important;
@@ -1988,33 +1999,35 @@ i.fa.fa-whatsapp.my-float:before {
   .home-video {
     width: 95%;
   }
-
   .zona-container {
     justify-content: center;
   }
-
   .min_map_title {
     font-size: 1.5rem !important;
   }
-
   .min_map_subtitle {
     font-size: 0.7rem !important;
   }
-}
-
-@media (max-width: 576px) {
+  .cuna-img {
+    width: 60px;
+  }
+  .cunas-home {
+    font-size: 0.7rem;
+  }
+  .nombre-personaje {
+  font-size: 0.6rem;
+  line-height: 0.4rem;
+  }
   .chapter-container {
     width: 230px;
   }
-
   .min_map_title {
     font-size: 1.2rem !important;
   }
-
   .min_map_subtitle {
     font-size: 0.6rem !important;
   }
-/* 
+  /* 
   .back-to-top {
     background-color: transparent !important;
     color: #fff;
@@ -2023,27 +2036,22 @@ i.fa.fa-whatsapp.my-float:before {
     bottom: 80px;
     right: 0;
   } */
-}
-
-
-/* Queries footer */
-@media (max-width: 557px) {
   .container {
     padding-left: 5px !important;
   }
+  /* Queries footer */
   .logos-footer {
     width: 70px;
   }
   .row-footer {
     display: inline-block !important;
   }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
   .logos-footer {
     width: 70%;
   }
+
 }
+
 
 /* Queries Capitulo */
 
@@ -2058,24 +2066,30 @@ i.fa.fa-whatsapp.my-float:before {
   .rep-title {
     font-size: 2rem;
     padding-top:38px;
+    line-height: 2rem;
   } 
   .rep-subtitle {
     font-size: 1.2rem;
   } 
   .intro-cap-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
   .cuna-rep-title {
     font-size: 1.4rem;
   } 
   .cunas-rep { 
-    font-size: 01rem;
+    font-size: 1rem;
   } 
-  .nombre-personaje3 { 
+  .nombre-personaje-2 { 
     font-size: 0.8rem;
+    line-height: 1.2rem;
   } 
   .texto-suenos {
     width: 70%;
+  }
+  .master-wrapper {
+   padding-top: 10px !important;
   }
   /* .s-zonas-text {
     margin-top: 50px;
@@ -2090,18 +2104,23 @@ i.fa.fa-whatsapp.my-float:before {
 
 @media (min-width: 768px) and (max-width: 1150px) {
   .cap-title {
-    font-size: 4rem;
+    font-size: 3.1rem !important;
     letter-spacing: 1rem;
   }
-
   .p-title {
     line-height: 2.1rem ;
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 767px) {
+
   .cap-title {
-    font-size: 3.4rem !important;
+    font-size: 2.3rem !important;
+  }
+  .intro-cap-text {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    width: 96%
   }
   .p-intro-title {
     top: 16px !important;
@@ -2125,19 +2144,15 @@ i.fa.fa-whatsapp.my-float:before {
   .cap2-title {
     font-size: 3rem !important;
   }
-}
-
-@media (max-width: 575px) {
   .container {
     width: 90%;
   } 
-  .cap-title {
-    font-size: 2.7rem !important;
-    letter-spacing: 0.7rem !important;
+  .cuna-rep-title {
+  padding-top: 8px;
   }
   .rep-title {
-    font-size: 1.6rem;
-    line-height: 1.7rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
     letter-spacing: 0.2rem;
   }
   .s-zonas-text {
@@ -2145,21 +2160,17 @@ i.fa.fa-whatsapp.my-float:before {
     padding-top: 3rem;
     font-size: 0.7rem;
   }
-  .intro-cap-text {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
   .rep-subtitle {
-    font-size: 1rem;
-    line-height: 1.4rem;
-  }
-  .nombre-personaje {
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-  }
-  .nombre-personaje2 {
     font-size: 0.8rem;
     line-height: 1.2rem;
+  }
+  .nombre-personaje {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+  .nombre-personaje-2 {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
   }
   .master-wrapper {
     padding-top: 1rem !important;
@@ -2178,48 +2189,54 @@ i.fa.fa-whatsapp.my-float:before {
     width: 90% !important;
   }
   .owl-carousel .owl-item img {
-    height: 200px !important;
+    height: 220px !important;
   }
   .owl-nav {
     font-size: 3rem;
   }
   .cunas-rep {
-    width: 90% !important;
+    width: 98% !important;
+    font-size: 0.9rem;
   }
-}
-
-@media (max-width: 767px) {
   .circle.info-up {
     width: 20px;
     height: 20px;
   }
-
+  .intro-v {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
   #mapa {
     height: 75vh !important;
     width: 70% !important;
   }
-
-
 }
 
 /* Queries Nuestro proyecto */
 
+@media (min-width: 1020px) and (max-width: 1440px) {
+.parrafos-proyecto {
+  line-height: 1.3rem;
+}
+}
+
 @media (max-width: 575px) {
   .project-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
     letter-spacing: 0.3rem;
   }
-
   .titulo-proyecto {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    line-height: 2rem;
     font-weight: 500 !important;
     padding-top: 20px;
   }
-
   .titulo-proyecto-secos {
     width: 101%;
   }
-
+  .parrafos-proyecto {
+    line-height: 1.5rem;;
+  }
   .intro-project {
     font-size: 1.2rem;
     padding-top: 20px;
