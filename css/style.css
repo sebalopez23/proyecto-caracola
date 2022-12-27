@@ -1875,13 +1875,19 @@ i.fa.fa-whatsapp.my-float:before {
 .nombre-personaje-2 {
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.4rem;;
+  line-height: 2rem;
+  font-weight: 200;
 
 }
 
 .cap-title {
   font-size: 3.7rem;
   letter-spacing: 0.6rem;
+}
+
+.intro-cap {
+  font-size: 1.3rem;
+  width: 80%;
 }
 
 .intro-cap-text {
