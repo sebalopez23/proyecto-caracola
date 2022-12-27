@@ -2221,6 +2221,10 @@ i.fa.fa-whatsapp.my-float:before {
   .next-cap {
     font-size: 0.8rem;
   }
+ .next-cap {
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+}
   #mapa {
     height: 75vh !important;
     width: 70% !important;

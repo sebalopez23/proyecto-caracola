@@ -294,7 +294,7 @@
 			</div>
 		</section>
 		<!-- About -->
-		<section id="about Problematica"
+		<section id="problematica"
 			class="navbar-is-white text-white section pp-scrollable d-flex align-items-center position-absolute">
 			<div class="intro">
 				<div class="scroll-wrap">
@@ -375,7 +375,7 @@
 		</section>
 
 		<!-- Experience -->
-		<section id="experience"
+		<section id="trabajo-en-conjunto"
 			class="navbar-is-white text-white section pp-scrollable d-flex align-items-center position-absolute">
 			<div class="intro">
 				<div class="scroll-wrap">
@@ -457,7 +457,7 @@
 		</section>
 
 		<!-- Skills -->
-		<section id="skills"
+		<section id="vision-a-futuro"
 			class="navbar-is-white text-white section pp-scrollable d-flex align-items-center position-absolute">
 			<div class="intro">
 				<div class="scroll-wrap">
@@ -520,7 +520,7 @@
 		</section>
 
 		<!-- Projects -->
-		<section id="projects" class="navbar-is-white text-white section pp-scrollable position-absolute">
+		<section id="vision-compartida" class="navbar-is-white text-white section pp-scrollable position-absolute">
 			<div class="intro">
 				<div class="scroll-wrap">
 					<div class="container">
@@ -549,7 +549,7 @@
 			</div>
 		</section>
 
-		<section id="partners" class="navbar-is-white text-white section pp-scrollable position-absolute" data-href="capitulo-2.html">
+		<section id="suenos-futuros" class="navbar-is-white text-white section pp-scrollable position-absolute" data-href="capitulo-2.html">
 			<div class="intro">
 				<div class="scroll-wrap">
 					<div class="container">
@@ -624,46 +624,7 @@
 			});    
 		</script>
 		<script>gsap.registerPlugin(ScrollToPlugin)</script>
-		<script>
-			// Redirect page
-			(()=>{
-			    const target = document.querySelector('#partners');
-			    if(!target) return;
-			    const progress = {val: 0}
-			    const tl = gsap.to(progress, {
-			      val: 1,
-			      duration: 1.5,
-			      paused: true,
-			      onUpdate: ()=>{
-			        if(window.soundController){
-			          window.soundController.setVolume(1 - progress.val)
-			        }
-			      },
-			      onComplete: () => {
-			        location.href = target.dataset.href;
-			        /*setTimeout(()=>{
-			          if(window.locomotiveScroll){
-			            window.locomotiveScroll.scrollTo(0)
-			          } else{
-			            window.scrollTo(0, 0)
-			          }
-			        }, 100)*/
-			      }
-			    });
-			    const callback = function(entries, observer) {
-			      entries.forEach(entry => {
-			          if (entry.intersectionRatio > 0) {
-			            tl.play()
-			          } else {
-			            tl.reverse();
-			          }
-			        });
-			    };
-			    const observer = new IntersectionObserver(callback);
-			    observer.observe(target);
-			})()
-
-		</script>
+		
 </body>
 
 </html>
