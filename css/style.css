@@ -1861,10 +1861,9 @@ i.fa.fa-whatsapp.my-float:before {
 }
 
 .logos-colab {
- width: 80px;
+ width: 100px;
+ height: auto;
 }
-
-
 
 /* Capitulos */
 
@@ -1973,6 +1972,13 @@ i.fa.fa-whatsapp.my-float:before {
     font-weight: 200;
     line-height: 0.8rem;
   }
+  .fef-footer {
+    padding-top: 30px !important;
+  }
+  .logos-footer {
+    width: 120px;
+  }
+  
   /* #video.home-video {
     width: 55% !important;
     height: auto !important;
@@ -2039,17 +2045,18 @@ i.fa.fa-whatsapp.my-float:before {
   .container {
     padding-left: 5px !important;
   }
+
   /* Queries footer */
   .logos-footer {
-    width: 70px;
+    width: 95px;
+  }
+  .logos-colab {
+    width: 90px;
   }
   .row-footer {
     display: inline-block !important;
   }
-  .logos-footer {
-    width: 70%;
-  }
-
+ 
 }
 
 
