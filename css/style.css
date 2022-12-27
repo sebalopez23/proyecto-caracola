@@ -1634,11 +1634,11 @@ hr {
 }
 
 .zona-text {
-  font-size: 0.7rem !important;
+  font-size: 0.9rem !important;
 }
 
 .drop1-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: 600px !important;
   color: #f27961;
@@ -1886,12 +1886,11 @@ i.fa.fa-whatsapp.my-float:before {
 
 .intro-cap {
   font-size: 1.3rem;
-  width: 80%;
+  width: 90%;
 }
 
 .intro-cap-text {
   font-size: 1.2rem;
-  width: 80%;
 }
 
 .rep-title {
@@ -2129,8 +2128,13 @@ i.fa.fa-whatsapp.my-float:before {
   .cap-title {
     font-size: 2.3rem !important;
   }
+  .intro-cap {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    width: 100%
+  }
   .intro-cap-text {
-    font-size: 0.9rem;
+    font-size:  0.9rem;
     line-height: 1.3rem;
     width: 96%
   }
@@ -2181,8 +2185,8 @@ i.fa.fa-whatsapp.my-float:before {
     line-height: 0.8rem;
   }
   .nombre-personaje-2 {
-    font-size: 0.7rem;
-    line-height: 1.1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
   }
   .master-wrapper {
     padding-top: 1rem !important;
