@@ -1877,7 +1877,6 @@ i.fa.fa-whatsapp.my-float:before {
   font-weight: 300;
   line-height: 2rem;
   font-weight: 200;
-
 }
 
 .cap-title {
@@ -2218,6 +2217,9 @@ i.fa.fa-whatsapp.my-float:before {
   .intro-v {
     font-size: 1rem;
     line-height: 1.3rem;
+  }
+  .next-cap {
+    font-size: 0.8rem;
   }
   #mapa {
     height: 75vh !important;
