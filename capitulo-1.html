@@ -549,7 +549,7 @@
 			</div>
 		</section>
 
-		<section id="partners" class="navbar-is-white text-white section pp-scrollable position-absolute">
+		<section id="partners" class="navbar-is-white text-white section pp-scrollable position-absolute" data-href="capitulo-2.html">
 			<div class="intro">
 				<div class="scroll-wrap">
 					<div class="container">
@@ -569,7 +569,6 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- <section id="testimonials" class="navbar-is-white text-white section pp-scrollable position-absolute">
 			<div class="intro">
 				<div class="scroll-wrap">
@@ -610,6 +609,8 @@
 		<script src="js/jquery.pagepiling.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/interface2.js"></script>
+		<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
 		<script text="javascript">
 			$(function () {
 				$('[data-toggle="tooltip"]').tooltip()
@@ -621,6 +622,47 @@
 					audio.pause();
 				});
 			});    
+		</script>
+		<script>gsap.registerPlugin(ScrollToPlugin)</script>
+		<script>
+			// Redirect page
+			(()=>{
+			    const target = document.querySelector('#partners');
+			    if(!target) return;
+			    const progress = {val: 0}
+			    const tl = gsap.to(progress, {
+			      val: 1,
+			      duration: 1.5,
+			      paused: true,
+			      onUpdate: ()=>{
+			        if(window.soundController){
+			          window.soundController.setVolume(1 - progress.val)
+			        }
+			      },
+			      onComplete: () => {
+			        location.href = target.dataset.href;
+			        /*setTimeout(()=>{
+			          if(window.locomotiveScroll){
+			            window.locomotiveScroll.scrollTo(0)
+			          } else{
+			            window.scrollTo(0, 0)
+			          }
+			        }, 100)*/
+			      }
+			    });
+			    const callback = function(entries, observer) {
+			      entries.forEach(entry => {
+			          if (entry.intersectionRatio > 0) {
+			            tl.play()
+			          } else {
+			            tl.reverse();
+			          }
+			        });
+			    };
+			    const observer = new IntersectionObserver(callback);
+			    observer.observe(target);
+			})()
+
 		</script>
 </body>
 
