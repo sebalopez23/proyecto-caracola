@@ -2069,7 +2069,10 @@ i.fa.fa-whatsapp.my-float:before {
   .icon-text {
    font-size: 0.7rem;
    margin-top: -10px;
-
+  }
+  .intro-wsp {
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
 }
 
