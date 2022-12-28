@@ -1767,7 +1767,7 @@ hr {
 }
 
 .intro-project {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.4rem;
 }
 
@@ -2263,7 +2263,7 @@ i.fa.fa-whatsapp.my-float:before {
     letter-spacing: 0.3rem;
   }
   .titulo-proyecto {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5rem;
     font-weight: 500 !important;
     padding-top: 19px;
@@ -2278,6 +2278,7 @@ i.fa.fa-whatsapp.my-float:before {
   .intro-project {
     font-size: 1.2rem;
     padding-top: 8px;
+    line-height: 1.3srem;
   }
   .project-img {
     margin-top: 25px;
