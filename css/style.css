@@ -2061,7 +2061,14 @@ i.fa.fa-whatsapp.my-float:before {
   .row-footer {
     display: inline-block !important;
   }
- 
+  .info-icon {
+    width: 80px;
+  }
+  .icon-text {
+   font-size: 0.7rem;
+   margin-top: -10px;
+
+  }
 }
 
 /* @media (max-width: 407px) {
@@ -2251,23 +2258,29 @@ i.fa.fa-whatsapp.my-float:before {
 
 @media (max-width: 575px) {
   .project-title {
-    font-size: 2.3rem;
+    font-size: 2rem;
     letter-spacing: 0.3rem;
   }
   .titulo-proyecto {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     font-weight: 500 !important;
-    padding-top: 20px;
+    padding-top: 19px;
+    margin-bottom: 14px;
   }
   .titulo-proyecto-secos {
     width: 101%;
   }
   .parrafos-proyecto {
-    line-height: 1.5rem;;
+    line-height: 1.3rem;;
   }
   .intro-project {
     font-size: 1.2rem;
-    padding-top: 20px;
+    padding-top: 8px;
+  }
+  .project-img {
+    margin-top: 25px;
+    height: 170px;
+    width: auto;
   }
 }
