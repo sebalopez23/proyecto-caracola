@@ -2006,6 +2006,7 @@ i.fa.fa-whatsapp.my-float:before {
 }
 
 @media (max-width: 767px) {
+
   .home-video {
     width: 95%;
   }
@@ -2063,6 +2064,10 @@ i.fa.fa-whatsapp.my-float:before {
  
 }
 
+/* @media (max-width: 407px) {
+  .languaje li {
+    display: block !important;
+} */
 
 /* Queries Capitulo */
 
@@ -2213,6 +2218,7 @@ i.fa.fa-whatsapp.my-float:before {
   .cunas-rep {
     width: 98% !important;
     font-size: 0.9rem;
+    line-height: 1rem;
   }
   .circle.info-up {
     width: 20px;
