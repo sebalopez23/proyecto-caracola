@@ -1998,6 +1998,7 @@ i.fa.fa-whatsapp.my-float:before {
 }
 
 
+
 @media screen and (max-width: 1150px) {
   .intro-home {
     font-size: 1rem;
@@ -2082,10 +2083,20 @@ i.fa.fa-whatsapp.my-float:before {
   }
 }
 
-/* @media (max-width: 407px) {
-  .languaje li {
+@media (max-width: 353px) and (max-width: 420px) {
+  .menu-is-open .navbar-mobile {
+
+    width: 100% !important;
+    min-height: 100vh !important;
+    z-index: 111 !important;
+  }
+  .m-nav {
     display: block !important;
-} */
+  } 
+} 
+
+
+
 
 /* Queries Capitulo */
 
