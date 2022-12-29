@@ -647,7 +647,7 @@ a.nav-link.email {
 .navbar-desctop .phone,
 .navbar-desctop .email {
   float: right;
-  font-family: "Karla", sans-serif;
+  font-family: "Prompt", sans-serif;
   position: relative;
   top: 0.3rem;
   margin-left: 2.5rem;
@@ -838,6 +838,7 @@ a.nav-link.email {
 }
 
 .navbar-mobile .language {
+  z-index: 111 !important;
   margin-top: 0;
   font-size: 0.85rem;
 }
@@ -894,11 +895,13 @@ a.nav-link.email {
 }
 
 .navbar-nav-mobile {
+  z-index: 111;
   margin: 0 auto;
   display: block;
   font-size: 2.5vh;
   margin-top: 8vh;
   font-weight: 600;
+  margin-left: 0;
 }
 
 .navbar-nav-mobile li {
@@ -1779,7 +1782,8 @@ hr {
 
 .nombre-personaje {
   font-size: 0.9rem;
-  font-weight: 300;
+  line-height: 1rem;
+  font-weight: 200 !important;
   font-style: italic;
 }
 
@@ -1788,13 +1792,15 @@ hr {
 }
 
 .wsp-btn:hover {
-  background-color: rgb(212, 98, 57);
+  background-color: rgb(228, 119, 80);
   border: none;
   color: white;
 }
 
 .wsp-btn-text {
   font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
 }
 
 .fa-whatsapp-nav {
