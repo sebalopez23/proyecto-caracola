@@ -687,7 +687,7 @@ a.nav-link.email {
 
 .social-icons li {
   float: left;
-  margin-right: 1.5rem;
+  margin-right: 0.8rem;
 }
 
 .social-icons ion-icon {
@@ -1662,13 +1662,16 @@ hr {
   font-size: 0.8rem;
 }
 
-.spotify-icon {
+.hover-icon {
   transition: transform 0.2s;
   /* Animation */
 }
 
-.spotify-icon:hover {
+
+.hover-icon:hover {
   transform: scale(1.2);
+  color: #f27961 !important;
+  fill:#df674f;
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
