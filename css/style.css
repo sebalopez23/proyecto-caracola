@@ -2072,6 +2072,9 @@ i.fa.fa-whatsapp.my-float:before {
   }
 
   /* Queries footer */
+  .logos-home {
+    width: 78px;
+  }
   .logos-footer {
     width: 95px;
   }
