@@ -1676,6 +1676,11 @@ hr {
 }
 
 /* Home */
+
+.logos-home {
+  width: 110px;
+}
+
 .icon-text {
   font-size: 0.8rem;
   font-weight: 300;
@@ -1752,8 +1757,11 @@ hr {
   }
 }
 
+
 .texto-audio {
+  font-size: 0.9rem;
   font-weight: 300;
+  line-height: 1rem;
 }
 
 .title {
@@ -1993,7 +2001,7 @@ i.fa.fa-whatsapp.my-float:before {
   .logos-footer {
     width: 120px;
   }
-  
+ 
   /* #video.home-video {
     width: 55% !important;
     height: auto !important;
