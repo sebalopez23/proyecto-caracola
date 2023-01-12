@@ -694,7 +694,14 @@
 	<script src="js/jquery.pagepiling.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/interface2.js"></script>
-	<script>
+  	<script>
+	$("audio").bind("play", function () {
+		$("audio").not(this).each(function (index, audio) {
+			audio.pause();
+		});
+	});    
+	</script>
+	<!--<script>
 	  $( document ).ready(function() {
 	  	setInterval(function () {
 	  		console.log(window.location.href.includes("#news"))
@@ -703,14 +710,7 @@
 		  	}
 	  	}, 3000);
 		});
-  </script>
-  <script>
-	$("audio").bind("play", function () {
-		$("audio").not(this).each(function (index, audio) {
-			audio.pause();
-		});
-	});    
-</script>
+  </script>-->
 </body>
 
 </html>
