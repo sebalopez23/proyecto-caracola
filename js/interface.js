@@ -4,7 +4,7 @@
 
   	/* Window Load */
 	$(window).on('load',function(){
-		$('.loader').fadeOut(200);
+		$('.loader').fadeOut(1000);
         $('.line').addClass('active');
 	});
 
